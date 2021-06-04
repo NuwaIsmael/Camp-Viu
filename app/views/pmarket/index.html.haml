@@ -1,0 +1,110 @@
+- content_for :injection_data do
+  = inject_available_countries
+  = inject_enterprise_shopfront_list
+  = inject_open_street_map_config
+
+:css
+  #tagline:before { background-image: url("#{ContentConfig.home_hero.url}") }
+
+
+
+
+#panes
+%section.faq{:"ng-controller" => "PMarketController"}
+  #pmarket_calendar_open Calendari
+  #pmarket_calendar.hidden
+    %span#pmarket_calendar_close
+      %svg.h-6.w-6{:fill => "none", :stroke => "currentColor", :viewbox => "0 0 24 24", :xmlns => "http://www.w3.org/2000/svg"}
+        %path{:d => "M13 5l7 7-7 7M5 5l7 7-7 7", "stroke-linecap" => "round", "stroke-linejoin" => "round", "stroke-width" => "2"}
+    %h2 Esdeveniments: els mercats físics
+    %table.pmarket_calendar_table
+      %tr{:"ng-repeat" => "item in esdeveniments track by $index"}
+        %td.col1 {{item.nom}}
+        %td.col2 {{item.data}}
+        %td.col3 {{item.lloc}}
+  .pmarket_header
+    %img{:src => "{{content.header_block.logo}}"}
+    %h1
+      {{content.header_block.titol}}
+
+  .pmarket_info
+    .row
+      %h2 {{normal_block_1.titol}}
+      %p
+        {{normal_block_1.descripcio}}
+      %span Video
+
+  .pmarket_videos
+    .row
+      %h2 {{normal_block_2.titol}}
+      .carousel{"data-flickity" => "{ \"imagesLoaded\": true, \"percentPosition\": false }"}
+        %img{:alt => "orange tree", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg"}/
+        %img{:alt => "submerged", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg"}/
+        %img{:alt => "look-out", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg"}/
+        %img{:alt => "One World Trade", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg"}/
+        %img{:alt => "drizzle", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"}/
+        %img{:alt => "cat nose", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg"}/
+  .pmarket_producers
+    .row
+      %h2 {{content.producers_block.titol}}
+      .small-12.medium-4.columns
+        %h3.pmarket_producers_title {{producers_block_icon1.titol}}
+        %br/
+        %img{:src => "https://via.placeholder.com/250"}
+        %br/
+        %pmarket_producers_description{"ng-bind-html" => "producers_block_icon1.descripcio"}
+
+      .small-12.medium-4.columns
+        %h3.pmarket_producers_title {{producers_block_icon2.titol}}
+        %br/
+        %img{:src => "https://via.placeholder.com/250"}
+        %br/
+        %pmarket_producers_description{"ng-bind-html" => "producers_block_icon2.descripcio"}
+      .small-12.medium-4.columns
+        %h3.pmarket_producers_title {{producers_block_icon3.titol}}
+        %br/
+        %img{:src => "https://via.placeholder.com/250"}
+        %br/
+        %pmarket_producers_description{"ng-bind-html" => "producers_block_icon3.descripcio"}
+    %a{:href => "#"} {{content.producers_block.button_text}}
+
+  .pmarket_map
+    .row
+      %h1 {{content.map_block.titol}}
+      %p  {{content.map_block.descripcio}}
+      %div#map2 
+      %a{:href => "#"} {{content.map_block.button_text}}
+
+  .pmarket_bonline
+    %h2 {{content.shop_online_block.titol}}
+    %p
+      {{content.shop_online_block.descripcio}}
+    .small-12.medium-6.columns.text-right
+      %img{:height => "68px", :src => "{{content.shop_online_block.imatge}}"}
+    .row
+      .small-12.medium-6.columns.pmarket_bonline_links
+        %a{:href => "#"} {{shop_online_block_link1.text}}
+        %a{:href => "#"} {{shop_online_block_link2.text}}
+        %a{:href => "#"} {{shop_online_block_link3.text}}
+
+  .pmarket_counter
+    .row
+      %h2 Estem creant un nou sistema de consum
+      .small-12.medium-4.columns
+        %span.pmarket_counter_number
+          %strong= number_with_delimiter @num_distributors
+        %span.pmarket_counter_name
+          BOTIGUES
+      .small-12.medium-4.columns
+        %span.pmarket_counter_number 0
+        %span.pmarket_counter_name
+          PRODUCTES
+      .small-12.medium-4.columns
+        %span.pmarket_counter_number
+          %strong= number_with_delimiter @num_producers
+        %span.pmarket_counter_name
+          PRODUCTORES
+
+  = render "shared/footer"
+
+%script{:src => "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"}

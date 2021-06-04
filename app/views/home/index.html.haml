@@ -1,0 +1,16 @@
+:css
+  #tagline:before { background-image: url("#{ContentConfig.home_hero.url}") }
+
+
+%div{"ng-controller" => "HomeCtrl"}
+  = render "home/header_learn"
+
+  #panes
+
+    = render "home/brandstory"
+    = render "home/features"
+    = render "home/stats"
+    = render "home/rbinfo"
+    = render "home/fminfo"
+
+  = render "shared/footer"

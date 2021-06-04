@@ -1,0 +1,252 @@
+.pmarket_header{
+  height: 350px;
+  padding: 45px;
+  text-align: center;
+  color: #ffffff !important;
+  background-color: green;
+  background-image: image-url("pmarket/header.png");
+  background-size: cover;
+}
+
+.pmarket_header h1{
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.pmarket_header h1, .pmarket_header h2{
+  color: #ffffff;
+}
+
+.pmarket_header img{ height: 200px; }
+
+.pmarket_info{
+  padding: 92px;
+  text-align: center;
+}
+
+.pmarket_info h2{
+  color: #583311;
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+.pmarket_info h2{
+}
+
+.parmket_info h2{
+  color: #583311 !important;
+}
+
+.pmarket_videos{
+  padding: 92px;
+  background-color: #5833111A;
+  text-align: center;
+}
+
+.pmarket_videos h2{
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+.pmarket_videos h2{
+   color: #583311 !important;
+}
+
+.pmarket_producers{
+  padding: 92px;
+  background-color: #B7831C4D;
+}
+
+.pmarket_producers h2{
+  text-align: center;
+  font-size: 60px;
+  color: #9F5C1E;
+  margin-bottom: 75px;
+}
+
+.pmarket_producers p{
+  margin-top: 20px;
+}
+
+.pmarket_producers_title, .pmarket_producers p{
+  color: #583311;
+}
+
+.pmarket_producers_title{
+  font-size: 25px;
+}
+
+.pmarket_producers_description{
+  font-size: 20px;
+}
+
+.pmarket_producers a{
+  display: block;
+  width: 300px;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  margin: 85px auto 85px auto;
+  border: 3px solid #9F5C1E;
+  color: #9F5C1E;
+}
+
+.pmarket_map{
+  padding: 92px;
+  background-color: #98C2254D;
+  text-align: center;
+}
+
+.pmarket_map h1{
+  font-size: 60px;
+  color: #70892B;
+}
+
+.pmarket_map p{
+  color: #583311;
+}
+
+.pmarket_map a{
+  display: block;
+  width: 300px;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  margin: 85px auto 85px auto;
+  border: 3px solid #70892B;
+  color: #70892B;
+}
+
+.pmarket_map span{
+  display: block;
+  width: 80%;
+  height: 30%;
+  margin: 85px auto 85px auto;
+  color: #ffffff;
+  background-color: green;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pmarket_bonline{
+  text-align: center;
+  padding: 92px;
+  background-color: #58331133;
+}
+
+.pmarket_bonline h2{
+  font-size: 60px;
+  color: #583311;
+}
+
+.pmarket_bonline p{
+  color: #583311;
+  margin-bottom: 30px;
+}
+
+.pmarket_bonline a{
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 50%;
+  color: #583311;
+  border: 3px solid #583311;
+  padding: 12px;
+  margin-bottom: 6px;
+}
+
+.pmarket_counter{
+  padding: 92px;
+  background-color: #B7831C1A;
+  text-align: center;
+  background-image: image-url('pmarket/contador.png');
+  background-size: cover;
+}
+
+.pmarket_counter h2{
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.pmarket_counter_number{
+  display: block;
+  margin-top: 50px;
+  color: #ffffff;
+  font-size: 100px;
+}
+
+.pmarket_counter_name{
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.pmarket_bonline_links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  max-height: 390px;
+}
+
+#pmarket_calendar_open{
+  position: fixed;
+  top: 260px;
+  right: 15px;
+  padding: 15px;
+  color: #583311;
+  background-color: #98C225;
+  border-radius: 32px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#pmarket_calendar_close{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: 1px solid red;
+  height: 30px;
+  width: 30px;
+}
+
+#pmarket_calendar{
+  position: fixed;
+  top: 260px;
+  right: 15px;
+  padding: 24px;
+  color: #583311;
+  background-color: #CDDAAA;
+  z-index: 2;
+}
+
+#pmarket_calendar h2{
+  font-size: 60px;
+  color: #70892B;
+}
+
+.pmarket_calendar_table{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+
+.pmarket_calendar_table tr.even, table tr.alt, table tr:nth-of-type(even){
+  background-color: transparent;
+}
+
+.pmarket_calendar_table .col1{
+  color: #70892B;
+}
+
+.pmarket_calendar_table .col2{
+  color: #583311;
+}
+
+.pmarket_calendar_table .col3{
+  color: #583311;
+  font-weight: bold;
+}
+
+#map2{
+  width:100%;
+  height: 500px;
+}

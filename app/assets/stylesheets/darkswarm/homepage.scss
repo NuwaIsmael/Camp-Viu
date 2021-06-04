@@ -1,0 +1,269 @@
+.header_learn{
+  height: calc(100vh - 65px);
+
+}
+
+.header_learn_bg1, .header_learn_bg2, .header_learn_bg3{
+  padding: 3rem;
+  width: 33.33%;
+  height: 100%;
+  float:left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.header_learn_bg1{
+  background-image:  image-url("home/header1.png");
+  background-size: cover;
+}
+
+.header_learn_bg2{
+  background-image: image-url("home/header2.png");
+  background-size: cover;
+}
+
+.header_learn_bg3{
+  background-image:  image-url("home/header3.png");
+  background-size: cover;
+}
+
+.header_learn_button{
+  font-family: "FrancoisOne", sans-serif;
+  display:inline-block;
+  font-size: 20px;
+  letter-spacing: 2.2px;
+  padding: 12px 30px 12px 30px;
+  margin: 50px auto 50px auto;
+}
+
+#brandstory_expand_container{
+  padding: 0px 150px 150px 150px;
+}
+
+#brandstory_expand_container h2{
+  font-size: 60px;
+  color: #9EA720;
+}
+
+#brandstory_expand_container p{
+  font-size: 25px;
+  color: #3B3B3B;
+  margin-bottom: 100px;
+}
+
+.brandstory_button{
+  margin: 25px auto 25px auto;
+  padding: 12px 30px 12px 30px;
+  border: 3px solid #9EA720;
+  color: #9EA720;
+}
+
+.btn_orange{
+  background-color: #F08823;
+  color: #ffffff;
+}
+
+.btn_green{
+  background-color: #9EA720;
+  color: #ffffff;
+}
+
+.btn_yellow{
+  background-color: #F0B72A;
+  color: #ffffff;
+}
+
+
+
+.video {
+  margin:0px auto 0px auto;
+  &::before {
+    content: '';
+    padding-top: calc(100%-44%);
+  }
+  & video {
+    width: 100%;
+  }
+}
+
+.home_block_header{
+  background-color: #70892B;
+  text-align: center;
+  font-size: 30px;
+  padding: 75px;
+}
+
+.home_block_header_logo{
+  height: 90px!important;
+}
+
+.home_block_header h1{
+  font-size: 60px;
+  letter-spacing: 6.6px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.home_block_header h2{
+  font-size: 30px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.home_block_body{
+  background-color: #98C2251A;
+  padding: 130px 25px 100px;
+}
+
+.home_block_body a{
+  margin: 40px auto 0px auto;
+  display: inline-block;
+  padding: 12px;
+  text-align: center;
+}
+
+.bg_home_features_body .home-icon-box-bottom h4{
+  color: #9EA720;
+}
+
+.bg_home_features_header{
+  background-color: #9EA720;
+}
+
+.bg_home_features_body{
+  background-color: #98C2251A;
+}
+
+.bg_home_features_body h3{
+  font-size: 60px;
+  font-weight: bold;
+  color: #9EA720;
+  margin-bottom: 60px;
+}
+
+.bg_home_features_body a{
+  border: 3px solid #9EA720;
+  color: #9EA720;
+}
+
+#brand-story .row h2{
+  font-size: 60px;
+  color: #4D5A0C;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+#brand-story .row p{
+  font-size: 25px;
+  color: #3B3B3B;
+}
+
+
+#brand-story .home-icon-box-bottom h4{
+  font-weight: bold;
+  color: #4D5A0C;
+}
+
+#brand-story .home-icon-box-bottom p{
+  color: #F08823;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.home-icon-box{
+  min-height: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.home-icon-box-bottom h4{
+  text-transform: uppercase;
+  color: #9F5C1E;
+}
+
+.home-icon-box-bottom p{
+  color: #583311;
+}
+
+.bg_home_rbinfo_header{
+  background-color: #F0B72A;
+}
+
+.bg_home_rbinfo_body{
+  background-color: #5833111A;
+}
+
+.bg_home_rbinfo_body h3{
+  font-size: 60px;
+  color: #F0B72A;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.bg_home_rbinfo_body a{
+  border: 3px solid #F0B72A;
+  color: #F0B72A;
+}
+
+.bg_home_rbinfo_body h4{
+  color: #F0B72A;
+}
+
+.bg_home_fminfo_header{
+  background-color: #F08823;
+}
+
+.bg_home_fminfo_body{
+  background-color: #B7831C1A;
+}
+
+.bg_home_fminfo_body h3{
+  font-size: 60px;
+  color: #F08823;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.bg_home_fminfo_body h4{
+  color: #F08823;
+}
+
+.bg_home_fminfo_body a{
+  border: 3px solid #F08823;
+  color: #F08823;
+}
+
+.header_learn_title{
+  margin-top: 50px;;
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.header_learn_subtitle{
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.header_learn_description{
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.carousel{
+  margin: 50px 0px 50px 0px;
+}
+
+.carousel img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel img {
+    height: 400px;
+  }
+}

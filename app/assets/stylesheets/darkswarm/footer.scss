@@ -1,0 +1,210 @@
+@import "branding";
+@import "mixins";
+@import "animations";
+
+footer {
+  .row {
+    p {
+      font-size: 1rem;
+    }
+
+    a, a * {
+      @include csstrans;
+
+      color: white;
+
+      &:hover, &:active, &:focus {
+        color: rgba(white, 1);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-global {
+    background-color: #4D5A0C;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    .logo {
+      width: 200px;
+      height: 200px;
+      background: $ofn-grey;
+
+      @include border-radius(120px);
+
+      margin: (-140px) auto 0 auto;
+
+      img {
+        margin-top: 36px;
+        width: 120px;
+      }
+    }
+
+    .alert-box {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+
+      .alert-cta {
+        @include csstrans;
+
+        width: 100%;
+        border: 1px solid rgba($dark-grey, 0.35);
+        background-image: image-url("tile-wide.png");
+        background-position: center center;
+        background-color: #bbb;
+        padding: 12px 0 8px 0;
+        display: block;
+
+        &, & * {
+          @include csstrans;
+
+          color: #333;
+        }
+
+        strong {
+          letter-spacing: 0.5px;
+        }
+
+        a:hover, a:active, a:focus {
+          text-decoration: none;
+          border-color: white;
+
+          &, & * {
+            color: rgba(white, 1);
+          }
+        }
+      }
+    }
+
+    .row {
+      &, p, h1, h2, h3, h4, h5, h6 {
+        color: $disabled-bright;
+      }
+    }
+  }
+
+  .footer-local {
+    background: #4D5A0C;
+
+    @include panepadding;
+
+    div.row a img {
+      margin-bottom: 20px;
+    }
+
+    .row {
+      &, p, h1, h2, h3, h4, h5, h6 {
+        color: #ffffff;
+      }
+
+      p.secure-icon i {
+        font-size: 10rem;
+        color: rgba(white, 0.1);
+      }
+
+      p.secure-text {
+        color: rgba($disabled-med, 0.35);
+      }
+
+      p.text-big {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+
+      .social-icons {
+        margin-bottom: 0.9rem;
+        padding-top: 0.1rem;
+
+        a {
+          i {
+            font-size: 1.5rem;
+            color: white;
+          }
+
+          &:hover, &:active, &:focus {
+            text-decoration: none;
+
+            i {
+              color: lighten($dark-grey, 60%);
+              text-shadow: 2px 2px 0 black;
+            }
+          }
+        }
+      }
+    }
+
+    .legal p {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.footer_nav{
+  list-style: none;
+}
+
+.footer_nav li{
+  display: inline-block!important;
+}
+
+.footer_nav li a{
+  display: block!important;
+  float: left!important;
+  text-decoration: none;
+  padding: 14px;
+  text-transform: uppercase;
+}
+
+.footer_nav_icon{
+  padding: 14px;
+}
+
+.footer_nav_icon i{
+  font-size: 20px;
+}
+
+.footer_nav_connect_btn{
+  padding: 14px 24px 14px 24px;
+  border: 2px solid white;
+  color: #ffffff;
+}
+
+.legal h1{
+  color: #ffffff!important;
+}
+
+.footer_nav{
+  margin-bottom: 25px;
+}
+
+.footer_address{
+  margin-bottom: 15px;
+}
+
+.footer-partners{
+  padding: 50px 0px 50px 0px;
+}
+
+.footer-partners .row{
+  margin-bottom: 50px;
+  color: #4D5A0C;
+}
+
+.footer-legal{
+  background-color: #9EA720;
+  padding: 12px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0px!important;
+}
+
+
+
+.footer-legal a{
+  display: block;
+  text-decoration: none;
+  color: #ffffff!important;
+  margin: 0px 15px 0px 15px;
+}

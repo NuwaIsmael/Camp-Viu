@@ -1,0 +1,16 @@
+:css
+  #tagline:before { background-image: url("#{ContentConfig.home_hero.url}") }
+
+
+#panes
+
+%section{:"ng-app" => "demo"}
+%section.faq_page{:"ng-controller" => "FaqController"}
+  .row
+    %h1 Preguntes freqüents
+    %accordion-container{:"ng-repeat" => "item in posts track by $index"}
+      %button.accordion {{item.pregunta}}
+      .accordion-panel.hidden
+        %p {{item.resposta}}
+
+= render "shared/footer"

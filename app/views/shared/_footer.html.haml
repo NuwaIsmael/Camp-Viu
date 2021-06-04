@@ -1,0 +1,71 @@
+%footer
+
+  .footer-local
+
+    .row.align-center.footer_nav
+      .columns.small-2
+        %a.footer_nav_icon{href: ContentConfig.footer_twitter_url}
+          %img{src: "assets/footer/icona-instagram.svg", width: "20"}
+        %a.footer_nav_icon{href: ContentConfig.footer_instagram_url}
+          %img{src: "assets/footer/icona-facebook.svg", width: "20"}
+      .columns.small-9
+        %ul.footer_nav
+          %li
+            %a{:href => "#"} BANC DE TERRES
+          %li
+            %a{:href => "#"} BANC DE RECURSOS
+          %li
+            %a{:href => "#"} MERCAT DE LA PAGESIA
+          %li
+            %a{:href => "#"} ESDEVENIMNENTS
+          %li
+            %a{:href => "#"} preguntes freqüents
+          %li
+            %a{:href => "#"} MAPA
+      .columns.small-1.footer_nav_connect_btn ACCÉS
+
+
+    .row.legal
+      .small-12.medium-6.columns.text-left
+        %img{src: "assets/logo.svg", width: "350px"}
+        .footer_address
+          %div Consell Comarcal del Baix Camp
+          %div
+            %b Dr. Ferran, 8, 43202 Reus
+        .footer_contact
+          %div Tel 977 327 155
+          %div Fax 977 321 773
+          %div bancdeterres@campviu.cat
+
+      .small-12.medium-6.columns.text-left
+        %a{href: main_app.root_path}
+          %img{src: ContentConfig.footer_logo.url, width: "220"}
+        %p.text-small Open Food Network és una plataforma de programari lliure i de codi obert. El seu contingut està llicenciat amb CC BY-SA 3.0 i el codi amb AGPL 3.
+
+
+  .footer-partners
+    .row
+      .small-12.medium-12.columns Ajut per a la creació de la pàgina web del Banc de Terres i Recursos Agraris del Consell Comarcal del Baix Camp, amb la que es preveu agilitzar els serveis que ja venia prestant el Banc de Terres i la posada en marxa de noves funcionalitats dins del Banc de Recursos Agraris i el Mostrador del Camp, també aportarà informació referent al Mercat de la Pagesia.
+    .row
+      .small-12.medium-6.columns
+        Operació: Implementació d’estratègies de desenvolupament local
+      .small-12.medium-6.columns Actuació del Programa de Desenvolupament Rural de Catalunya 2014-2020, cofinançada per:
+    .row
+      .small-12.medium-4.columns
+        %img{src: "assets/footer/logo-leader-delcamp.png", width: "140"}
+      .small-12.medium-4.columns
+        %img{src: "assets/footer/Logo-DARP.png", width: "220"}
+      .small-12.medium-4.columns
+      %img{src: "assets/footer/logo-leader.png", width: "50"}
+      %img{src: "assets/footer/logo-fons-europeu-agricola.png", width: "220"}
+    .row
+      .small-12.medium-4.columns
+        %img{src: "assets/footer/logo-consell-baixcamp.png", width: "140"}
+      .small-12.medium-4.columns
+        %img{src: "assets/footer/logo-diputacio-tarragona.png", width: "140"}
+      .small-12.medium-4.columns
+      %img{src: "assets/footer/logo-soc.png", width: "140"}
+  .footer-legal
+    %a{href: main_app.root_path} Avis legal
+    %a{href: main_app.root_path} Política de privacitat
+    %a{href: main_app.root_path} Política de cookies

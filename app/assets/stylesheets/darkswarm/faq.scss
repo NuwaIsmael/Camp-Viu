@@ -1,0 +1,68 @@
+.faq_page{
+  padding: 200px;
+  padding: 50px 100px 100px 100px;
+}
+
+.faq_page h1{ color: #70892B; font-size: 60px; }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #98C2251A !important;
+  color: #9F5C1E !important;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 25px;
+  margin-top: 25px;
+  border-radius: 0em !important;
+  -webkit-border-radius: 0em !important;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.accordion-panel{
+    padding: 0 18px;
+    color: #583311;
+    background-color: #98C2251A;
+}
+
+.accordion-panel p{
+  font-size: 25px;
+}
+
+.accordion button:focus, .accordion button:hover{
+    background-color: initial !important;
+    color: #9F5C1E !important;
+}
+
+.accordion-container{
+    margin-bottom: 25px;
+}
+
+.hidden{ display: none; }

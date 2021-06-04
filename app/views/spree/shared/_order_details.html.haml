@@ -1,0 +1,49 @@
+.row
+  .columns.large-6
+    .order-summary.text-small
+      .right
+        - if order.paid?
+          = t :order_paid
+        - else
+          = t :order_not_paid
+      %span
+        = t :order_total
+        %strong
+          = order.display_total.to_html
+    .pad
+      .text-big
+        = t :order_payment
+        %strong=  last_payment_method(order)&.name
+      %p.text-small.text-skinny.pre-line
+        %em= last_payment_method(order)&.description
+
+    .order-summary.text-small
+      %strong
+        = t :order_billing_address
+    .pad
+      %p.text-small
+        = order.bill_address.firstname + " " + order.bill_address.lastname
+        %br
+        = order.bill_address.full_address
+        %br
+        = order.bill_address.phone
+
+  .columns.large-6
+    - if order.shipping_method.andand.require_ship_address
+      = render 'spree/shared/shipment_delivery_details', order: order
+    - else
+      = render 'spree/shared/shipment_pickup_details', order: order
+%br
+.row
+  .columns.large-12
+    - if order.changes_allowed?
+      .alert-box.order-summary{ "ofn-inline-alert" => true, "ng-show" => "visible" }
+        = t(:orders_changeable_orders_alert_html, oc_close: l(order.order_cycle.orders_close_at, format: "%b %d, %Y %H:%M"))
+        %a.close{ "ng-click" => "close()" } &times;
+
+    = form_for order, url: order_path(order), html: {id: 'update-order', name: 'update_order_form' } do |order_form|
+      - if order.changes_allowed?
+        = render 'spree/orders/form', order_form: order_form
+      -else
+        = render 'spree/orders/summary', order: order
+      = render 'spree/orders/form/update_buttons', order: order
