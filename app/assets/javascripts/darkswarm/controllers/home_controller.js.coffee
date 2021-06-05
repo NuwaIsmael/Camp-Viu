@@ -40,6 +40,16 @@ Darkswarm.controller "HomeCtrl", ($scope, $http) ->
     $scope.brandstory_icons_2 = JSON.parse(JSON.stringify(array[1]))
     $scope.brandstory_icons_3 = JSON.parse(JSON.stringify(array[2]))
 
+    #Counter Stats
+    array = Object.values($scope.content.contadors.contador)
+    $scope.stats1 = JSON.parse(JSON.stringify(array[0]))
+    $scope.stats2 = JSON.parse(JSON.stringify(array[1]))
+    $scope.stats3 = JSON.parse(JSON.stringify(array[2]))
+    $scope.stats4 = JSON.parse(JSON.stringify(array[3]))
+    $scope.stats5 = JSON.parse(JSON.stringify(array[4]))
+
+
+
     openBrandstory = document.getElementById('brandstory_expand')
     closeBrandstory = document.getElementById('brandstory_expand_hide')
     containerBrandstory = document.getElementById('brandstory_expand_container')

@@ -21,7 +21,7 @@
           %img{:height => "68px", :src => "{{brandstory_icons_3.icona}}"}
         .home-icon-box-bottom
           %h4 {{ brandstory_icons_3.titol }}
-          %p.text-normal {{ brandstory_icons_3.text_link }}0
+          %p.text-normal {{ brandstory_icons_3.text_link }}
 
 
       %a.brandstory_button#brandstory_expand{:href => "#"} Saber més
@@ -37,12 +37,8 @@
 
   .row
     .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": true, \"prevNextButtons\": true}"}
-      %img{:alt => "orange tree", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg"}/
-      %img{:alt => "submerged", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg"}/
-      %img{:alt => "look-out", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg"}/
-      %img{:alt => "One World Trade", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg"}/
-      %img{:alt => "drizzle", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"}/
-      %img{:alt => "cat nose", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg"}/
+      .responsive-embed-widescreen
+        %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
 
 
 %script{:src => "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"}
