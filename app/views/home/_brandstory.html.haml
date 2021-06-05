@@ -1,27 +1,27 @@
 #brand-story.pane
   .row
     .text-center
-      %h2 {{content.brandstory.titol}}
-      %p  {{content.brandstory.claim}}
-      .row
-        .small-12.medium-4.columns
-          .home-icon-box
-            %img{:height => "68px", :src => "{{brandstory_icons_1.icona}}"}
-          .home-icon-box-bottom
-            %h4 {{ brandstory_icons_1.titol }}
-            %p.text-normal {{ brandstory_icons_1.text_link }}
-        .small-12.medium-4.columns
-          .home-icon-box
-            %img{:height => "68px", :src => "{{brandstory_icons_2.icona}}"}
-          .home-icon-box-bottom
-            %h4 {{ brandstory_icons_2.titol }}
-            %p.text-normal {{ brandstory_icons_2.text_link }}
-        .small-12.medium-4.columns
-          .home-icon-box
-            %img{:height => "68px", :src => "{{brandstory_icons_3.icona}}"}
-          .home-icon-box-bottom
-            %h4 {{ brandstory_icons_3.titol }}
-            %p.text-normal {{ brandstory_icons_3.text_link }}0
+      .brand-story-header
+        %h2 {{content.brandstory.titol}}
+        %p  {{content.brandstory.claim}}
+      .small-12.medium-4.columns
+        .home-icon-box
+          %img{:height => "68px", :src => "{{brandstory_icons_1.icona}}"}
+        .home-icon-box-bottom
+          %h4 {{ brandstory_icons_1.titol }}
+          %p.text-normal {{ brandstory_icons_1.text_link }}
+      .small-12.medium-4.columns
+        .home-icon-box
+          %img{:height => "68px", :src => "{{brandstory_icons_2.icona}}"}
+        .home-icon-box-bottom
+          %h4 {{ brandstory_icons_2.titol }}
+          %p.text-normal {{ brandstory_icons_2.text_link }}
+      .small-12.medium-4.columns
+        .home-icon-box
+          %img{:height => "68px", :src => "{{brandstory_icons_3.icona}}"}
+        .home-icon-box-bottom
+          %h4 {{ brandstory_icons_3.titol }}
+          %p.text-normal {{ brandstory_icons_3.text_link }}0
 
 
       %a.brandstory_button#brandstory_expand{:href => "#"} Saber més
@@ -36,7 +36,7 @@
     %a.brandstory_button#brandstory_expand_hide{:href => "#"} Amagar text
 
   .row
-    .carousel{"data-flickity" => "{ \"imagesLoaded\": true, \"percentPosition\": false }"}
+    .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": true, \"prevNextButtons\": true}"}
       %img{:alt => "orange tree", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg"}/
       %img{:alt => "submerged", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg"}/
       %img{:alt => "look-out", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg"}/

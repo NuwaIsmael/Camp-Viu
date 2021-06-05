@@ -203,7 +203,6 @@
   position: absolute;
   right: 5px;
   top: 5px;
-  border: 1px solid red;
   height: 30px;
   width: 30px;
 }
@@ -244,6 +243,11 @@
 .pmarket_calendar_table .col3{
   color: #583311;
   font-weight: bold;
+}
+
+.col-stats{
+  width: 20%;
+  float:left;
 }
 
 #map2{
