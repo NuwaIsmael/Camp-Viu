@@ -26,44 +26,49 @@
     %img{:src => "{{content.header_block.logo}}"}
     %h1
       {{content.header_block.titol}}
-
   .pmarket_info
     .row
       %h2 {{normal_block_1.titol}}
       %p
         {{normal_block_1.descripcio}}
-      %span Video
+    .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
+      .responsive-embed-widescreen
+        %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
+      .responsive-embed-widescreen
+        %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
+      .responsive-embed-widescreen
+        %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
 
   .pmarket_videos
     .row
       %h2 {{normal_block_2.titol}}
-      .carousel{"data-flickity" => "{ \"imagesLoaded\": true, \"percentPosition\": false }"}
-        %img{:alt => "orange tree", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg"}/
-        %img{:alt => "submerged", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg"}/
-        %img{:alt => "look-out", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg"}/
-        %img{:alt => "One World Trade", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg"}/
-        %img{:alt => "drizzle", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"}/
-        %img{:alt => "cat nose", :src => "https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg"}/
+      .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
+        .responsive-embed-widescreen
+          %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
+        .responsive-embed-widescreen
+          %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
+        .responsive-embed-widescreen
+          %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
   .pmarket_producers
     .row
       %h2 {{content.producers_block.titol}}
       .small-12.medium-4.columns
         %h3.pmarket_producers_title {{producers_block_icon1.titol}}
         %br/
-        %img{:src => "https://via.placeholder.com/250"}
+        %img{:src => "{{producers_block_icon1.image}}"}
         %br/
         %pmarket_producers_description{"ng-bind-html" => "producers_block_icon1.descripcio"}
 
       .small-12.medium-4.columns
         %h3.pmarket_producers_title {{producers_block_icon2.titol}}
         %br/
-        %img{:src => "https://via.placeholder.com/250"}
+        %img{:src => "{{producers_block_icon2.image}}"}
         %br/
         %pmarket_producers_description{"ng-bind-html" => "producers_block_icon2.descripcio"}
       .small-12.medium-4.columns
         %h3.pmarket_producers_title {{producers_block_icon3.titol}}
         %br/
-        %img{:src => "https://via.placeholder.com/250"}
+        %img{:src => "{{producers_block_icon3.image}}"}
         %br/
         %pmarket_producers_description{"ng-bind-html" => "producers_block_icon3.descripcio"}
     %a{:href => "#"} {{content.producers_block.button_text}}
@@ -89,21 +94,23 @@
 
   .pmarket_counter
     .row
-      %h2 Estem creant un nou sistema de consum
+      %h2
+        = t :pmarket_counter_title
       .small-12.medium-4.columns
         %span.pmarket_counter_number
           %strong= number_with_delimiter @num_distributors
         %span.pmarket_counter_name
-          BOTIGUES
+          = t :pmarket_counter_1
       .small-12.medium-4.columns
-        %span.pmarket_counter_number 0
+        %span.pmarket_counter_number
+          %strong= number_with_delimiter @num_products
         %span.pmarket_counter_name
-          PRODUCTES
+          = t :pmarket_counter_2
       .small-12.medium-4.columns
         %span.pmarket_counter_number
           %strong= number_with_delimiter @num_producers
         %span.pmarket_counter_name
-          PRODUCTORES
+          = t :pmarket_counter_3
 
   = render "shared/footer"
 

@@ -20,7 +20,7 @@
           %span.nav-primary
             = t 'link2'
       %li
-        %a{href: "#"}
+        %a{href: "/pmkarket"}
           %span.nav-primary
             = t 'link3'
       %li
@@ -28,7 +28,7 @@
           %span.nav-primary
             = t 'link4'
       %li
-        %a{href: "#"}
+        %a{href: "/faq"}
           %span.nav-primary
             = t 'link5'
       %li
@@ -38,8 +38,10 @@
 
     %div
       .nav-main-menu-social
-        %img{src: "assets/footer/icona-instagram.svg", width: "20"}
-        %img{src: "assets/footer/icona-facebook.svg", width: "20"}
+        %a{href: "https://instagram.com"}
+          %img{src: "assets/footer/icona-instagram.svg", width: "20"}
+        %a{href: "https://facebook.com"}
+          %img{src: "assets/footer/icona-facebook.svg", width: "20"}
       %ul.nav-icons-menu
         - if OpenFoodNetwork::I18nConfig.selectable_locales.count > 1
           = render 'shared/menu/language_selector'

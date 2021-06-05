@@ -267,7 +267,7 @@
 }
 
 .responsive-embed-widescreen{
-  position: relative;
+  position: relative !important;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
 }
@@ -280,7 +280,8 @@
   height: 100%;
 }
 
-.responsive-embed
+.flickity-slider {
+}
 
 
 @media screen and ( max-width: 768px ) {
@@ -312,7 +313,24 @@
   .brand-story-header{
     padding: 28px;
   }
-
+  .pmarket_header{
+    padding: 0;
+  }
+  .pmarket_videos{
+    padding: 20px 20px 125px 20px;
+  }
+  .pmarket_producers{
+    padding: 30px;
+  }
+  .pmarket_map{
+    padding: 5px;
+  }
+  .pmarket_bonline{
+    padding: 30px;
+  }
+  .pmarket_bonline_links{
+    align-items: center;
+  }
   .footer-partners .row .columns{
     margin-bottom: 15px;
   }

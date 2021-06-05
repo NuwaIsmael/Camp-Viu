@@ -24,7 +24,8 @@
           %p.text-normal {{ brandstory_icons_3.text_link }}
 
 
-      %a.brandstory_button#brandstory_expand{:href => "#"} Saber més
+      %a.brandstory_button#brandstory_expand{:href => "#"}
+        = t :header_block_link_text
 
   .text-center#brandstory_expand_container.hidden
     %h2 {{content.brandstory.expand1.titol}}
@@ -33,10 +34,15 @@
     %br/
     %h2 {{content.brandstory.expand2.titol}}
     %p  {{content.brandstory.expand2.p1}}
-    %a.brandstory_button#brandstory_expand_hide{:href => "#"} Amagar text
+    %a.brandstory_button#brandstory_expand_hide{:href => "#"}
+      = t :brandstory_hide
 
   .row
-    .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": true, \"prevNextButtons\": true}"}
+    .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
+      .responsive-embed-widescreen
+        %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
+      .responsive-embed-widescreen
+        %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
       .responsive-embed-widescreen
         %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
 

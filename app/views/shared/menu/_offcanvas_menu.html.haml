@@ -3,14 +3,30 @@
     %li.ofn-logo
       %a{href: main_app.root_path}
         %img{src: "assets/logo.svg", height: "26px"}
-    - [*1..7].each do |menu_number|
-      - menu_name = "menu_#{menu_number}"
-      - if ContentConfig[menu_name].present?
-        %li.li-menu
-          %a{href: t("#{menu_name}_url") }
-            %span.nav-primary
-              %i{class: ContentConfig["#{menu_name}_icon_name"]}
-              = t "#{menu_name}_title"
+      %li.li-menu
+        %a{href: "#"}
+          %span.nav-primary
+            = t 'link1'
+      %li.li-menu
+        %a{href: "#"}
+          %span.nav-primary
+            = t 'link2'
+      %li.li-menu
+        %a{href: "#"}
+          %span.nav-primary
+            = t 'link3'
+      %li.li-menu
+        %a{href: "#"}
+          %span.nav-primary
+            = t 'link4'
+      %li.li-menu
+        %a{href: "#"}
+          %span.nav-primary
+            = t 'link5'
+      %li.li-menu
+        %a{href: "#"}
+          %span.nav-primary
+            = t 'link6'
     - if OpenFoodNetwork::I18nConfig.selectable_locales.count > 1
       %li.language-switcher.li-menu
         %a

@@ -5,7 +5,7 @@
       %h2 {{home_block_3.header.claim}}
   .home_block_body.bg_home_rbinfo_body.text-center
     .row
-      %h3 Què hi pots trobar?
+      %h3 {{home_block_3.titol}}
     .row
       .small-12.medium-3.columns
         .home-icon-box
@@ -32,4 +32,5 @@
           %h4 {{home_block_3_icon4.titol}}
           %p.text-normal {{home_block_3_icon4.claim}}
     .row
-      %a{:href => ""} VÉS A LA PÀGINA
+      %a{:href => ""}
+        = t :home_block_link_text
