@@ -6,7 +6,7 @@
   %section.left
     .ofn-logo
       %a{href: main_app.root_path}
-        %img{src: "assets/logo.svg", height: "26px"}
+        =image_tag  "logo.svg", :width => "115px"
 
   %section.right{"ng-cloak" => true}
     %span.cart-span{"ng-class" => "{ dirty: Cart.dirty || Cart.empty(), 'pure-dirty': Cart.dirty }"}
