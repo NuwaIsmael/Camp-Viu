@@ -16,7 +16,8 @@
     %span#pmarket_calendar_close
       %svg.h-6.w-6{:fill => "none", :stroke => "currentColor", :viewbox => "0 0 24 24", :xmlns => "http://www.w3.org/2000/svg"}
         %path{:d => "M13 5l7 7-7 7M5 5l7 7-7 7", "stroke-linecap" => "round", "stroke-linejoin" => "round", "stroke-width" => "2"}
-    %h2 Esdeveniments: els mercats físics
+    %h2
+      = t :pmarket_calendar
     %table.pmarket_calendar_table
       %tr{:"ng-repeat" => "item in esdeveniments track by $index"}
         %td.col1 {{item.nom}}
@@ -34,21 +35,14 @@
     .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
       .responsive-embed-widescreen
         %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
-      .responsive-embed-widescreen
-        %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
-      .responsive-embed-widescreen
-        %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
 
   .pmarket_videos
     .row
       %h2 {{normal_block_2.titol}}
-      .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
-        .responsive-embed-widescreen
-          %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
-        .responsive-embed-widescreen
-          %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
-        .responsive-embed-widescreen
-          %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
+    .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
+      .responsive-embed-widescreen
+        %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
+        
   .pmarket_producers
     .row
       %h2 {{content.producers_block.titol}}

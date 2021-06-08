@@ -45,6 +45,7 @@
   background-image: image-url("home/fondo-comptador.png");
   background-position: center center;
   background-color: $ofn-grey;
+  padding-top: 50px;
 
   @include fullbg;
 

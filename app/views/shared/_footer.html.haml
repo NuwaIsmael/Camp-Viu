@@ -5,9 +5,9 @@
     .row.align-center.footer_nav
       .columns.small-2.p-14
         %a.footer_nav_icon{href: ContentConfig.footer_twitter_url}
-          %img{src: "assets/footer/icona-instagram.svg", width: "20"}
+          =image_tag  "footer/icona-instagram.svg", :width => "20"
         %a.footer_nav_icon{href: ContentConfig.footer_instagram_url}
-          %img{src: "assets/footer/icona-facebook.svg", width: "20"}
+          =image_tag  "footer/icona-facebook.svg", :width => "20"
       .columns.small-9
         %ul.footer_nav
           %li
@@ -33,7 +33,7 @@
 
     .row.legal
       .small-12.medium-6.columns.text-left
-        %img{src: "assets/logo.svg", width: "350px"}
+        =image_tag  "logo.svg", :width => "350px"
         .footer_address
           %div Consell Comarcal del Baix Camp
           %div
@@ -58,19 +58,19 @@
       .small-12.medium-6.columns Actuació del Programa de Desenvolupament Rural de Catalunya 2014-2020, cofinançada per:
     .row.text-center
       .small-12.medium-4.columns
-        %img{src: "assets/footer/logo-leader-delcamp.png", width: "140"}
+        =image_tag  "footer/logo-leader-delcamp.png", :width => "140"
       .small-12.medium-4.columns
-        %img{src: "assets/footer/Logo-DARP.png", width: "220"}
+        =image_tag  "footer/Logo-DARP.png", :width => "220"
       .small-12.medium-4.columns
-      %img{src: "assets/footer/logo-leader.png", width: "50"}
-      %img{src: "assets/footer/logo-fons-europeu-agricola.png", width: "220"}
+      =image_tag  "footer/logo-leader.png", :width => "50"
+      =image_tag  "footer/logo-fons-europeu-agricola.png", :width => "220"
     .row.text-center
       .small-12.medium-4.columns
-        %img{src: "assets/footer/logo-consell-baixcamp.png", width: "140"}
+        =image_tag  "footer/logo-consell-baixcamp.png", :width => "140"
       .small-12.medium-4.columns
-        %img{src: "assets/footer/logo-diputacio-tarragona.png", width: "140"}
+        =image_tag  "footer/logo-diputacio-tarragona.png", :width => "140"
       .small-12.medium-4.columns
-      %img{src: "assets/footer/logo-soc.png", width: "140"}
+      =image_tag  "footer/logo-soc.png", :width => "140"
   .footer-legal
     %a{href: main_app.root_path} Avis legal
     %a{href: main_app.root_path} Política de privacitat

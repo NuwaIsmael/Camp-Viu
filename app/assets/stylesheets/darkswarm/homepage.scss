@@ -15,7 +15,7 @@
 }
 
 .header_learn_bg1{
-  background-image:  image-url("home/header1.png");
+  background-image: image-url("home/header1.png");
   background-size: cover;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .header_learn_bg3{
-  background-image:  image-url("home/header3.png");
+  background-image: image-url("home/header3.jpeg");
   background-size: cover;
 }
 
@@ -54,7 +54,8 @@
 }
 
 .brandstory_button{
-  margin: 25px auto 25px auto;
+  display: inline-block;
+  margin: 30px auto 25px auto;
   padding: 12px 30px 12px 30px;
   border: 3px solid #9EA720;
   color: #9EA720;
@@ -92,7 +93,7 @@
   background-color: #70892B;
   text-align: center;
   font-size: 30px;
-  padding: 75px;
+  padding: 75px 300px 75px 300px;
 }
 
 .home_block_header_logo{
@@ -288,7 +289,6 @@
   .header_learn_title {
     font-size: 42px;
   }
-
   .header_learn-desktop {
     display: none;
   }
@@ -301,6 +301,9 @@
   .header_learn{
     height: auto;
   }
+  .home_block_header{
+    padding: 75px 15px 90px 15px;
+  }
   .home_block_header_logo{
     height: auto !important;
   }
@@ -312,12 +315,6 @@
   }
   .brand-story-header{
     padding: 28px;
-  }
-  .pmarket_header{
-    padding: 0;
-  }
-  .pmarket_videos{
-    padding: 20px 20px 125px 20px;
   }
   .pmarket_producers{
     padding: 30px;

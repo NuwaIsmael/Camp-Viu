@@ -3,7 +3,7 @@
     %ul.nav-logo
       %li.ofn-logo
         %a{href: main_app.root_path}
-          %img{src: "assets/logo.svg", width: "200px"}
+          =image_tag  "logo.svg", :width => "200px"
       %li.powered-by
         %img{src: '/favicon.ico'}
         %span
@@ -39,9 +39,9 @@
     %div
       .nav-main-menu-social
         %a{href: "https://instagram.com"}
-          %img{src: "assets/footer/icona-instagram.svg", width: "20"}
+          =image_tag  "footer/icona-instagram.svg", :width => "20px"
         %a{href: "https://facebook.com"}
-          %img{src: "assets/footer/icona-facebook.svg", width: "20"}
+          =image_tag  "footer/icona-facebook.svg", :width => "20px"
       %ul.nav-icons-menu
         - if OpenFoodNetwork::I18nConfig.selectable_locales.count > 1
           = render 'shared/menu/language_selector'
