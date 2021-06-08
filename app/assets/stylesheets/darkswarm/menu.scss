@@ -319,3 +319,7 @@ nav.top-bar {
 .nav-main-menu-social img{
   margin-right: 15px;
 }
+
+.top-bar-section ul li:hover:not(.has-form) > a{
+  background-color: #4D5A0C;
+}

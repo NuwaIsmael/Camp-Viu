@@ -2,7 +2,7 @@
   %ul.off-canvas-list
     %li.ofn-logo
       %a{href: main_app.root_path}
-        %img{src: "assets/logo.svg", height: "26px"}
+        =image_tag  "logo.svg", :width => "265px"
       %li.li-menu
         %a{href: "#"}
           %span.nav-primary
@@ -12,7 +12,7 @@
           %span.nav-primary
             = t 'link2'
       %li.li-menu
-        %a{href: "#"}
+        %a{href: "/pmarket"}
           %span.nav-primary
             = t 'link3'
       %li.li-menu
