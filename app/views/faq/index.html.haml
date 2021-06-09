@@ -7,7 +7,8 @@
 %section{:"ng-app" => "demo"}
 %section.faq_page{:"ng-controller" => "FaqController"}
   .row
-    %h1 Preguntes freqüents
+    %h1
+      = t :faq_title
     %accordion-container{:"ng-repeat" => "item in posts track by $index"}
       %button.accordion {{item.pregunta}}
       .accordion-panel.hidden

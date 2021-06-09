@@ -2,10 +2,10 @@ Darkswarm.factory "MapConfiguration", ->
   new class MapConfiguration
     options:
       center:
-        latitude: -37.4713077
-        longitude: 144.7851531
+        latitude: 41.3818
+        longitude: 2.1685
       cluster_icon: "/map_icons/map_009-cluster.svg"
-      zoom: 12
+      zoom: 8
       additional_options:
         # mapTypeId: 'satellite'
         mapTypeControl: false

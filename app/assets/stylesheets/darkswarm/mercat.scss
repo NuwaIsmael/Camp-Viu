@@ -140,6 +140,7 @@
 .pmarket_bonline p{
   color: #583311;
   margin-bottom: 30px;
+  padding: 0px 250px 0px 250px;
 }
 
 .pmarket_bonline a{
@@ -187,6 +188,24 @@
   max-height: 390px;
 }
 
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.image-container img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
 #pmarket_calendar_open{
   position: fixed;
   top: 260px;
@@ -197,6 +216,12 @@
   border-radius: 32px;
   cursor: pointer;
   z-index: 1;
+}
+
+#pmarket_calendar_open svg{
+  float: left;
+  height: 25px;
+  margin-right: 5px;
 }
 
 #pmarket_calendar_close{
@@ -276,10 +301,6 @@
     padding: 45px 0px 0px 0px;
   }
 
-  .pmarket_producers{
-    padding: 0px;
-  }
-
   .pmarket_producers a{
     margin: 0;
   }
@@ -292,5 +313,24 @@
   }
   #pmarket_calendar{
     right: 0;
+    top: 125px;
+    overflow: scroll;
+  }
+
+  #pmarket_calendar h2{
+    font-size: 45px;
+  }
+}
+
+
+@media screen and ( max-width: 1457px ) {
+  .nav-main-menu-social{
+    display: none;
+  }
+  .pmarket_bonline p{
+    padding: 0px;
+  }
+  .top-bar-section ul .nav-primary{
+    font-size: 16px;
   }
 }

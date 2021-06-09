@@ -11,7 +11,10 @@
 
 #panes
 %section.faq{:"ng-controller" => "PMarketController"}
-  #pmarket_calendar_open Calendari
+  #pmarket_calendar_open
+    %svg.h-6.w-6{:fill => "none", :stroke => "currentColor", :viewbox => "0 0 24 24", :xmlns => "http://www.w3.org/2000/svg"}
+      %path{:d => "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z", "stroke-linecap" => "round", "stroke-linejoin" => "round", "stroke-width" => "2"}
+    Calendari
   #pmarket_calendar.hidden
     %span#pmarket_calendar_close
       %svg.h-6.w-6{:fill => "none", :stroke => "currentColor", :viewbox => "0 0 24 24", :xmlns => "http://www.w3.org/2000/svg"}
@@ -42,7 +45,7 @@
     .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
       .responsive-embed-widescreen
         %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
-        
+
   .pmarket_producers
     .row
       %h2 {{content.producers_block.titol}}

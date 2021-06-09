@@ -2,8 +2,9 @@ Darkswarm.controller "PMarketController", ($scope, $http, $log) ->
 
   console.log 'JS Loaded'
 
+  x = document.getElementById('lang').textContent
   $http.get('https://www.distracted-driscoll.135-125-232-65.plesk.page/wp-json/wp/v2/pages/44').success (content) ->
-    $scope.content = content.acf['ca']
+    $scope.content = content.acf[x]
     #Carreguem la informació de cada block a les variables per ser utilitzades posteriorment.
 
     array = Object.values($scope.content.normal_block)
@@ -46,7 +47,7 @@ Darkswarm.controller "PMarketController", ($scope, $http, $log) ->
       marker = new (google.maps.Marker)(
         position: myLatlng
         title: item.lloc)
-        
+
       marker.setMap(map2);
 
 

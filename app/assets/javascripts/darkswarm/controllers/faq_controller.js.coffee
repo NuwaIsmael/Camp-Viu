@@ -1,8 +1,9 @@
 module = angular.module("demo", ['ui.gravatar'])
 
 Darkswarm.controller "FaqController", ($scope, $http, $log) ->
+  x = document.getElementById('lang').textContent
   $http.get('https://www.distracted-driscoll.135-125-232-65.plesk.page/wp-json/wp/v2/pages/8').success (posts) ->
-    $scope.posts = posts.acf.faq
+    $scope.posts = posts.acf[x].faq
 
   window.onload = ->
     acc = document.getElementsByClassName('accordion')
