@@ -167,10 +167,10 @@ ca:
       email_welcome: "Benvinguda"
       email_registered: "ara forma part de"
       email_userguide_html: "La Guia d'usuari amb suport detallat per configurar una productora o grup de consum és aquí: %{link}"
-      userguide: "Guia d'usuaris d'Open Food Network"
+      userguide: "Guia d'usuaris d'Campviu"
       email_admin_html: "Pots gestionar el teu compte iniciant sessió a l'%{link} o fent clic a la pestanya a la part superior dreta de la pàgina d'inici i seleccionant Administració."
       admin_panel: "Tauler d’administració"
-      email_community_html: "També tenim un fòrum en línia per debats de la comunitat relacionada amb el programari OFN i els desafiaments únics de triar endavant una organització alimentària. T'animem a unir-t'hi. Estem en constant evolució i les teves contribucions en aquest fòrum donaran forma al que passi a en el futur. %{link}"
+      email_community_html: "També tenim un fòrum en línia per debats de la comunitat relacionada amb el programari Campviu i els desafiaments únics de triar endavant una organització alimentària. T'animem a unir-t'hi. Estem en constant evolució i les teves contribucions en aquest fòrum donaran forma al que passi a en el futur. %{link}"
       join_community: "Uneix-te a la comunitat"
     invite_manager:
       subject: "%{enterprise} t'ha convidat a ser administrador"
@@ -222,12 +222,12 @@ ca:
       other:
         title: Altres errors (%{count} comandes)
         explainer: El processament automàtic d'aquestes comandes va fallar per un motiu desconegut. Això no hauria de passar, si us plau, contacteu amb nosaltres si esteu veient això.
-  home: "OFN"
-  title: "Open Food Network"
+  home: "Campviu"
+  title: "Campviu"
   welcome_to: "Benvingut a "
   site_meta_description: "Comencem des de baix. Amb agricultors i productors disposats a explicar les seves històries amb orgull i sinceritat. Amb distribuïdors connectant persones i productes de manera justa i honesta. Amb compradors que creuen que millors decisions de compra setmanal poden ..."
   search_by_name: Cercar per nom o barri ...
-  producers_join: Els productors australians son ara benvinguts a unir-se a Open Food Network.
+  producers_join: Els productors australians son ara benvinguts a unir-se a Campviu.
   charges_sales_tax: Càrrecs d'IVA?
   print_invoice: "Imprimir Factura"
   print_ticket: "Imprimir tiquet"
@@ -415,7 +415,7 @@ ca:
         settings: "Configuració"
         stripe_connect_enabled: Permetre que les botigues acceptin pagaments mitjançant Stripe Connect?
         no_api_key_msg: No hi ha cap compte de Stripe per a aquesta organització.
-        configuration_explanation_html: Per obtenir instruccions detallades sobre la configuració de la integració de Stripe Connect, <a href='https://github.com/openfoodfoundation/openfoodnetwork/wiki/Setting-up-Stripe-on-an-OFN-instance' target='_blank'> consulteu aquesta guia </a>.
+        configuration_explanation_html: Per obtenir instruccions detallades sobre la configuració de la integració de Stripe Connect, <a href='https://github.com/openfoodfoundation/openfoodnetwork/wiki/Setting-up-Stripe-on-an-Campviu-instance' target='_blank'> consulteu aquesta guia </a>.
         status: Estat
         ok: Correcte
         instance_secret_key: Exemple de clau secreta
@@ -424,7 +424,7 @@ ca:
         charges_enabled: Càrrecs habilitats
         charges_enabled_warning: "Advertència: els càrrecs no estan habilitats per al vostre compte"
         auth_fail_error: La clau API que heu proporcionat no és vàlida
-        empty_api_key_error_html: No s'ha proporcionat cap clau d'API de Stripe. Per configurar la clau API, seguiu <a href="https://github.com/openfoodfoundation/openfoodnetwork/wiki/Setting-up-Stripe-on-an-OFN-instance" target="_blank"> aquestes instruccions < / a>
+        empty_api_key_error_html: No s'ha proporcionat cap clau d'API de Stripe. Per configurar la clau API, seguiu <a href="https://github.com/openfoodfoundation/openfoodnetwork/wiki/Setting-up-Stripe-on-an-Campviu-instance" target="_blank"> aquestes instruccions < / a>
     matomo_settings:
       edit:
         title: "Configuració de Matomo"
@@ -432,7 +432,7 @@ ca:
         matomo_site_id: "Identificador de Matomo"
         matomo_tag_manager_url: "URL de Matomo Tag Manager"
         info_html: "Matomo és una aplicació d'analytics web i mòbil. Podeu allotjar Matomo en local o bé utilitzar un servei allotjat al núvol. Consulteu <a href='http://matomo.org' target='_blank'>matomo.org</a> per obtenir més informació."
-        config_instructions_html: "Aquí podeu configurar la integració Matomo OFN. L'URL de Matomo que us apareix a continuació ha d'indicar la instància de Matomo en la qual s'enviarà la informació de seguiment de l'usuari; si es deixa buit, el seguiment de l'usuari de Matomo estarà desactivat. El camp d'identificació del lloc no és obligatori, però és útil si fa un seguiment de més d'un lloc web en una sola instància de Matomo; es pot trobar a la consola d'instància de Matomo."
+        config_instructions_html: "Aquí podeu configurar la integració Matomo Campviu. L'URL de Matomo que us apareix a continuació ha d'indicar la instància de Matomo en la qual s'enviarà la informació de seguiment de l'usuari; si es deixa buit, el seguiment de l'usuari de Matomo estarà desactivat. El camp d'identificació del lloc no és obligatori, però és útil si fa un seguiment de més d'un lloc web en una sola instància de Matomo; es pot trobar a la consola d'instància de Matomo."
         config_instructions_tag_manager_html: "En configurar l'URL de Matomo Tag Manager s'activa Matomo Tag Manager. Aquesta eina us permet configurar esdeveniments d’analítica. L’URL de Matomo Tag Manager es copia de la secció Instal·lar codi de Matomo Tag Manager. Assegureu-vos de seleccionar el contenidor i l’entorn adequats ja que aquestes opcions canvien l’URL."
     customers:
       index:
@@ -759,9 +759,9 @@ ca:
           permalink: Permalink (sense espais)
           permalink_tip: "Aquest enllaç permanent s'utilitza per crear l'url a la vostra botiga: %{link}your-shop-name / shop"
           link_to_front: Enllaç a la botiga
-          link_to_front_tip: Un enllaç directe a la vostra botiga a l'Open Food Netwok.
-          ofn_uid: UID d'OFN
-          ofn_uid_tip: L'identificador únic que s’utilitza per identificar l'organització a Open Food Network.
+          link_to_front_tip: Un enllaç directe a la vostra botiga a Campviu.
+          ofn_uid: UID d'Campviu
+          ofn_uid_tip: L'identificador únic que s’utilitza per identificar l'organització a Campviu.
         shipping_methods:
           name: "Nom"
           applies: "Actiu?"
@@ -817,14 +817,14 @@ ca:
           linkedin_placeholder: "p. ex: www.linkedin.com/in/ElTeuNom"
         stripe_connect:
           connect_with_stripe: "Connectar amb Stripe"
-          stripe_connect_intro: "Per acceptar pagaments amb targeta de crèdit haureu de connectar el vostre compte de Stripe a Open Food Network. Utilitzeu el botó de la dreta per començar. "
+          stripe_connect_intro: "Per acceptar pagaments amb targeta de crèdit haureu de connectar el vostre compte de Stripe a Campviu. Utilitzeu el botó de la dreta per començar. "
           stripe_account_connected: "Compte de Stripe connectat."
           disconnect: "Desconnecta el compte"
           confirm_modal:
             title: Connectar amb Stripe
-            part1: Stripe és un servei de processament de pagaments que permet que les botigues de l'OFN acceptin els pagaments amb targeta de crèdit de les consumidores.
-            part2: Per utilitzar aquesta funció heu de connectar el vostre compte Stripe a l'OFN. Si feu clic a "Accepto", us redirigirem al lloc web de Stripe on podeu connectar un compte Stripe existent o bé crear-ne un si encara no en teniu cap.
-            part3: Això permetrà que Open Food Network accepti pagaments amb targeta de crèdit de consumidores en nom vostre. Tingueu en compte que haureu de mantenir el vostre propi compte de Stripe, pagar-ne les comissions i mantenir el servei a les consumidores pel teu compte.
+            part1: Stripe és un servei de processament de pagaments que permet que les botigues de l'Campviu acceptin els pagaments amb targeta de crèdit de les consumidores.
+            part2: Per utilitzar aquesta funció heu de connectar el vostre compte Stripe a l'Campviu. Si feu clic a "Accepto", us redirigirem al lloc web de Stripe on podeu connectar un compte Stripe existent o bé crear-ne un si encara no en teniu cap.
+            part3: Això permetrà que Campviu accepti pagaments amb targeta de crèdit de consumidores en nom vostre. Tingueu en compte que haureu de mantenir el vostre propi compte de Stripe, pagar-ne les comissions i mantenir el servei a les consumidores pel teu compte.
             i_agree: Accepto
             cancel: Cancel·lar
         tag_rules:
@@ -873,22 +873,22 @@ ca:
         producer: Productor
       change_type_form:
         producer_profile: Perfil de productora
-        connect_ofn: Connecta mitjançant OFN
+        connect_ofn: Connecta mitjançant Campviu
         always_free: SEMPRE GRATUÏT
-        producer_description_text: Afegeix els teus productes a Katuma i permet a grups de consum i altres organitzacions emmagatzemar els teus productes a les seves botigues.
+        producer_description_text: Afegeix els teus productes a Campviu i permet a grups de consum i altres organitzacions emmagatzemar els teus productes a les seves botigues.
         producer_shop: Botiga d'una productora
         sell_your_produce: Ven els teus propis productes
-        producer_shop_description_text: Ven els teus productes directament  les consumidores a través de la teva pròpia botiga a Katuma.
+        producer_shop_description_text: Ven els teus productes directament  les consumidores a través de la teva pròpia botiga a Campviu.
         producer_shop_description_text2: Una productora amb botiga només és per als teus productes; si vols vendre productes produïts / cultivats fora del lloc, selecciona "Grup de productores".
         producer_hub: Grup de productores
         producer_hub_text: Ven productes propis i d'altres productores
-        producer_hub_description_text: La vostra organització és la columna vertebral del sistema alimentari local. Podeu vendre els vostres propis productes i o afegir els productes d'altres organitzacions a través de la vostra botiga a Katuma.
+        producer_hub_description_text: La vostra organització és la columna vertebral del sistema alimentari local. Podeu vendre els vostres propis productes i o afegir els productes d'altres organitzacions a través de la vostra botiga a Campviu.
         profile: Només perfil
         get_listing: Apareix en els directoris
-        profile_description_text: La gent pot trobar-vos i contactar-vos a Katuma. La vostra organització serà visible al mapa i es podrà cercar als directoris.
+        profile_description_text: La gent pot trobar-vos i contactar-vos a Campviu. La vostra organització serà visible al mapa i es podrà cercar als directoris.
         hub_shop: Botiga
         hub_shop_text: Veneu productes d'altres
-        hub_shop_description_text: La vostra organització la columna vertebral del vostre sistema alimentari local. Afegeix productes d'altres organitzacions i els podreu vendre a través de la vostra botiga a Katuma.
+        hub_shop_description_text: La vostra organització la columna vertebral del vostre sistema alimentari local. Afegeix productes d'altres organitzacions i els podreu vendre a través de la vostra botiga a Campviu.
         choose_option: Si us plau, trieu una de les opcions anteriors.
         change_now: Canvia ara
       enterprise_user_index:
@@ -912,7 +912,7 @@ ca:
         title: Nova organització
         back_link: 'Tornar a la llista d''organitzacions '
       welcome:
-        welcome_title: Benvingut a Katuma - Open Food Network!
+        welcome_title: Benvingut a Campviu - Campviu!
         welcome_text: Heu creat correctament un
         next_step: Següent pas
         choose_starting_point: 'Escull el teu perfil:'
@@ -1237,7 +1237,7 @@ ca:
   shared:
     mailers:
       powered_by:
-        open_food_network: "Open Food Network"
+        open_food_network: "Campviu"
         powered_html: "La vostra experiència de compra està impulsada per %{open_food_network}."
     menu:
       cart:
@@ -1255,21 +1255,21 @@ ca:
       mobile_menu:
         cart: "Cistella"
     register_call:
-      selling_on_ofn: "Estàs interessat en formar part d'Open Food Network?"
+      selling_on_ofn: "Estàs interessat en formar part d'Campviu?"
       register: "Registra't aquí"
     footer:
       footer_secure: "Segur i de confiança."
-      footer_secure_text: "Open Food Network utilitza el xifrat SSL (RSA de 2048 bits) a tot arreu per mantenir les vostres dades comercials i de pagament privades. Els nostres servidors no emmagatzemen els detalls de la targeta de crèdit i els pagaments es processen mitjançant serveis compatibles amb PCI."
+      footer_secure_text: "Campviu utilitza el xifrat SSL (RSA de 2048 bits) a tot arreu per mantenir les vostres dades comercials i de pagament privades. Els nostres servidors no emmagatzemen els detalls de la targeta de crèdit i els pagaments es processen mitjançant serveis compatibles amb PCI."
       footer_contact_headline: "Mantén el contacte"
       footer_contact_email: "Envia'ns un correu electrònic"
       footer_nav_headline: "Navega"
       footer_join_headline: "Uneix-te a nosaltres"
-      footer_join_body: "Crea un directori de botigues a grups a Open Food Network."
+      footer_join_body: "Crea un directori de botigues a grups a Campviu."
       footer_join_cta: "Vull saber-ne més!"
       footer_legal_call: "Llegiu el nostre"
       footer_legal_tos: "Termes i condicions"
       footer_legal_visit: "Troba'ns a"
-      footer_legal_text_html: "Open Food Network és una plataforma de programari lliure i de codi obert. El nostre contingut està llicenciat amb %{content_license} i el nostre codi amb %{code_license}."
+      footer_legal_text_html: "Campviu és una plataforma de programari lliure i de codi obert. El nostre contingut està llicenciat amb %{content_license} i el nostre codi amb %{code_license}."
       footer_data_text_with_privacy_policy_html: "Tenim cura de les vostres dades. Vegeu les nostres %{privacy_policy} i %{cookies_policy}"
       footer_data_text_without_privacy_policy_html: "Tenim cura de les vostres dades. Vegeu la nostra %{cookies_policy}"
       footer_data_privacy_policy: "política de privacitat"
@@ -1325,7 +1325,7 @@ ca:
   menu_4_title: "Xarxes/Grups"
   menu_4_url: "/groups"
   menu_5_title: "Sobre"
-  menu_5_url: "http://katuma.org/"
+  menu_5_url: "http://Campviu.org/"
   menu_6_title: "Connecta"
   menu_6_url: " "
   menu_7_title: "Aprèn"
@@ -1425,16 +1425,16 @@ ca:
   card_could_not_be_removed: Ho sentim, no s'ha pogut eliminar la targeta
   invalid_credit_card: "Targeta de crèdit no vàlida"
   ie_warning_headline: "El vostre navegador no està actualitzat :-("
-  ie_warning_text: "Per obtenir la millor experiència a Open Food Network et recomanem que actualitzis el teu navegador:"
+  ie_warning_text: "Per obtenir la millor experiència a Campviu et recomanem que actualitzis el teu navegador:"
   ie_warning_chrome: Descarrega Chrome
   ie_warning_firefox: Descarrega Firefox
   ie_warning_ie: Actualitza Internet Explorer
-  ie_warning_other: "No pots actualitzar el navegador? Prova Open Food Network al telèfon mòbil :-)"
+  ie_warning_other: "No pots actualitzar el navegador? Prova Campviu al telèfon mòbil :-)"
   legal:
     cookies_policy:
       header: "Com utilitzem les cookies"
       desc_part_1: "Les cookies són fitxers de text molt petits que s'emmagatzemen a l'ordinador quan visites alguns llocs web."
-      desc_part_2: "A OFN som plenament respectuosos amb la teva privadesa. Utilitzem només les cookies que són necessàries per oferir-te el servei de compra/venda d'aliments en línia. No venem cap de les vostres dades. En el futur, podríem proposar que compartiu algunes de les vostres dades per crear serveis públics nous que poguessin ser útils per a l'ecosistema (com ara serveis de logística per als sistemes d'alimentació curts), però encara no hi estem treballant i no ho farem sense la vostra autorització :-)"
+      desc_part_2: "A Campviu som plenament respectuosos amb la teva privadesa. Utilitzem només les cookies que són necessàries per oferir-te el servei de compra/venda d'aliments en línia. No venem cap de les vostres dades. En el futur, podríem proposar que compartiu algunes de les vostres dades per crear serveis públics nous que poguessin ser útils per a l'ecosistema (com ara serveis de logística per als sistemes d'alimentació curts), però encara no hi estem treballant i no ho farem sense la vostra autorització :-)"
       desc_part_3: "Utilitzem cookies principalment per recordar qui ets si inicies la sessió al servei o per recordar els elements que heu introduït a la vostra cistella encara que no hàgiu iniciat la sessió. Si continues navegant al lloc web sense fer clic \"Acceptar cookies\", suposem que ens estàs donant el consentiment per emmagatzemar les cookies que són essencials per al funcionament del lloc web. Aquí tens la llista de les cookies que fem servir."
       essential_cookies: "Cookies essencials"
       essential_cookies_desc: "Les cookies següents són estrictament necessàries per al funcionament del nostre lloc web."
@@ -1453,12 +1453,12 @@ ca:
       cookie_matomo_heatmap_desc: "Galeta d'enregistrament de sessió i heatmap de Matomo"
       cookie_matomo_ignore_desc: "La cookie usada per excloure l'usuari de ser seguit."
       disabling_cookies_header: "Advertència sobre la desactivació de cookies"
-      disabling_cookies_desc: "Com a usuari sempre podeu permetre, bloquejar o eliminar les cookies Open Food Network o qualsevol altra pàgina web sempre que vulgueu mitjançant el control de configuració del vostre navegador. Cada navegador té una operativa diferent. Aquests són els enllaços:"
+      disabling_cookies_desc: "Com a usuari sempre podeu permetre, bloquejar o eliminar les cookies Campviu o qualsevol altra pàgina web sempre que vulgueu mitjançant el control de configuració del vostre navegador. Cada navegador té una operativa diferent. Aquests són els enllaços:"
       disabling_cookies_firefox_link: "https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
       disabling_cookies_chrome_link: "https://support.google.com/chrome/answer/95647"
       disabling_cookies_ie_link: "https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies"
       disabling_cookies_safari_link: "https://www.apple.com/legal/privacy/en-ww/cookies/"
-      disabling_cookies_note: "Però tingueu en compte que si suprimiu o modifiqueu les cookies essencials que utilitza Open Food Network el lloc web no funcionarà; no podreu afegir res a la vostra cistella ni per validar la compra, per exemple."
+      disabling_cookies_note: "Però tingueu en compte que si suprimiu o modifiqueu les cookies essencials que utilitza Campviu el lloc web no funcionarà; no podreu afegir res a la vostra cistella ni per validar la compra, per exemple."
     cookies_banner:
       cookies_usage: "Aquest lloc utilitza cookies per fer que la teva navegació no sigui problemàtica i sigui segura i ens ajuda a comprendre com navegues per millorar les funcions que oferim."
       cookies_definition: "Les cookies són fitxers de text molt petits que s'emmagatzemen a l'ordinador quan visites alguns llocs web."
@@ -1473,11 +1473,11 @@ ca:
   brandstory_part2: "A continuació, necessitem una manera de fer-ho real. Una forma d'empoderar a totes les que cultiven, venen i compren aliments. Una manera d'explicar totes les històries, de gestionar tota la logística. Una manera de convertir la transacció en transformació cada dia."
   brandstory_part3: "Així que construïm un mercat en línia que anivella el camp de joc. És transparent, de manera que crea relacions reals. És de codi obert, de manera que és propietat de tothom. Escala a regions i nacions, de manera que les persones comencin versions a tot el món."
   brandstory_part4: "Funciona a tot arreu. Ho canvia tot."
-  brandstory_part5_strong: "L'anomenem Open Food Network."
+  brandstory_part5_strong: "L'anomenem Campviu."
   brandstory_part6: "A totes ens agrada menjar. Ara també podem estimar el nostre sistema alimentari."
   learn_body: "Explora models, històries i recursos per ajudar-te a desenvolupar el teu negoci o organització de menjar just. Troba coneixements, esdeveniments i altres oportunitats d'aprendre dels companys."
   learn_cta: "Inspira't"
-  connect_body: "Busca els nostres directoris complets de productores, organitzacions o xarxes per trobar menjar de proximitat i just a prop teu. Indica i llista la teva empresa o organització a l'OFN perquè les consumidores et trobin. Uneix-te a la comunitat per obtenir consells i resoldre problemes juntes."
+  connect_body: "Busca els nostres directoris complets de productores, organitzacions o xarxes per trobar menjar de proximitat i just a prop teu. Indica i llista la teva empresa o organització a l'Campviu perquè les consumidores et trobin. Uneix-te a la comunitat per obtenir consells i resoldre problemes juntes."
   connect_cta: "Explorar"
   system_headline: "Compres - aquí t'expliquem com funcionen."
   system_step1: "1. Cerca"
@@ -1686,7 +1686,7 @@ ca:
   products_no_results_html: "Ho sentim, no s'ha trobat cap resultat per a %{query}"
   products_clear_search: "Esborra la cerca"
   search_no_results_html: "Ho sentim, no s'ha trobat cap resultat per %{query}. Intentar una altra cerca?"
-  components_profiles_popover: "Els perfils no tenen una botiga a l'OFN però poden tenir la seva pròpia botiga física o en línia en altres llocs"
+  components_profiles_popover: "Els perfils no tenen una botiga a l'Campviu però poden tenir la seva pròpia botiga física o en línia en altres llocs"
   components_profiles_show: "Mostra els perfils"
   components_filters_nofilters: "Sense filtres"
   components_filters_clearfilters: "Esborra tots els filtres"
@@ -1713,14 +1713,14 @@ ca:
   groups_signup_motivation3: Sabem que tens grans idees i et volem ajudar. Compartirem els nostres coneixements, xarxes i recursos. Sabem que l'aïllament no genera canvis, així que ens associarem amb tu.
   groups_signup_motivation4: Ens trobem on ets.
   groups_signup_motivation5: És possible que formis part d'una xarxa de consumidores, grup de consum, productora o distribuïdora, un organisme industrial o un govern local.
-  groups_signup_motivation6: Independentment del teu paper en el moviment d'aliments local, estem preparades per ajudar-te. No obstant això, si vens a preguntar-se com és Open Food Network o que està fent a la teva part del món, comencem la conversa.
+  groups_signup_motivation6: Independentment del teu paper en el moviment d'aliments local, estem preparades per ajudar-te. No obstant això, si vens a preguntar-se com és Campviu o que està fent a la teva part del món, comencem la conversa.
   groups_signup_motivation7: Fem que els moviments dels aliments tinguin més sentit.
   groups_signup_motivation8: Cal activar i habilitar les xarxes, oferim una plataforma de conversa i d'acció. Necessites un compromís real. Volem ajudar totes les jugadores, totes les parts interessades, tots els sectors.
   groups_signup_motivation9: Necessites recursos. Et brindarem tota la nostra experiència. Necessites cooperació. Et connectarem millor amb una xarxa global d'iguals.
   groups_signup_pricing: Compte de grup
   groups_signup_studies: Casos d'estudi
   groups_signup_contact: Preparada per debatre?
-  groups_signup_contact_text: "Posa't en contacte per descobrir què pot fer OFN per tu:"
+  groups_signup_contact_text: "Posa't en contacte per descobrir què pot fer Campviu per tu:"
   groups_signup_detail: "Aquest és el detall."
   login_invalid: "Correu electrònic o contrasenya no vàlids"
   producers_about: Sobre nosaltres
@@ -1753,18 +1753,18 @@ ca:
   name_or_sku: "NOM O CODI"
   register_title: Registra't
   sell_title: "Registra't"
-  sell_headline: "Afegiu-vos a Katuma!"
+  sell_headline: "Afegiu-vos a Campviu!"
   sell_motivation: "Mostra el teu bonic menjar."
   sell_producers: "Productors"
   sell_hubs: "Grups"
   sell_groups: "Grups"
-  sell_producers_detail: "Configura un perfil per a la vostra empresa a Katuma en qüestió de minuts. En qualsevol moment pots convertir el teu perfil en una botiga en línia i vendre els teus productes directament a les consumidores."
-  sell_hubs_detail: "Configura un perfil per a la teva organització alimentària a Katuma. En qualsevol moment, pots modificar i convertir el teu perfil en una botiga de diverses productores."
+  sell_producers_detail: "Configura un perfil per a la vostra empresa a Campviu en qüestió de minuts. En qualsevol moment pots convertir el teu perfil en una botiga en línia i vendre els teus productes directament a les consumidores."
+  sell_hubs_detail: "Configura un perfil per a la teva organització alimentària a Campviu. En qualsevol moment, pots modificar i convertir el teu perfil en una botiga de diverses productores."
   sell_groups_detail: "Configura un directori personalitzat d'empreses (productores i altres empreses alimentàries) per a la teva regió o per a la teva xarxa, organització."
   sell_user_guide: "Troba més informació a la nostra Guia d'usuari."
-  sell_listing_price: "El llistat al OFN és gratuït. L’obertura i l’execució d’una botiga a OFN és gratuïta fins a 500 dòlars de vendes mensuals. Si veneu més, podeu escollir la vostra contribució comunitària entre l'1% i el 3% de les vendes. Per obtenir més informació sobre preus, consulteu la secció Plataforma de programari a través de l’enllaç Sobre al menú superior."
-  sell_embed: "També podem incrustar una botiga OFN al vostre web personalitzat o crear un lloc web personalitzat de la xarxa alimentària per a la teva regió."
-  sell_ask_services: "Pregunta'ns sobre els serveis d'OFN."
+  sell_listing_price: "El llistat al Campviu és gratuït. L’obertura i l’execució d’una botiga a Campviu és gratuïta fins a 500 dòlars de vendes mensuals. Si veneu més, podeu escollir la vostra contribució comunitària entre l'1% i el 3% de les vendes. Per obtenir més informació sobre preus, consulteu la secció Plataforma de programari a través de l’enllaç Sobre al menú superior."
+  sell_embed: "També podem incrustar una botiga Campviu al vostre web personalitzat o crear un lloc web personalitzat de la xarxa alimentària per a la teva regió."
+  sell_ask_services: "Pregunta'ns sobre els serveis d'Campviu."
   shops_title: Botigues
   shops_headline: Compres, transformades.
   shops_text: Els aliments creixen en cicles, les agricultores cullen en cicles, i nosaltres fem les comandes de menjar en cicles. Si trobes un cicle de comandes tancat, torna a consultar properament.
@@ -1889,9 +1889,9 @@ ca:
         registration_promo_image: "Imatge promocional per al vostre perfil"
         registration_about_us: "Text \"Sobre nosaltres\""
         registration_outcome_headline: "Què aconsegueixo?"
-        registration_outcome1_html: "El vostre perfil ajuda els usuaris <strong> a trobar </strong> i <strong> contactar </strong> a l'Open Food Network."
+        registration_outcome1_html: "El vostre perfil ajuda els usuaris <strong> a trobar </strong> i <strong> contactar </strong> a l'Campviu."
         registration_outcome2: "Utilitzeu aquest espai per explicar la història de la vostra organització, per ajudar a connectar amb la vostra presència social i en línia."
-        registration_outcome3: "També és el primer pas cap al comenrç a través d'Open Food Network o per obrir una botiga en línia."
+        registration_outcome3: "També és el primer pas cap al comenrç a través d'Campviu o per obrir una botiga en línia."
         registration_action: "Comencem!"
       details:
         title: "Detalls"
@@ -1943,7 +1943,7 @@ ca:
         title: "Sobre"
         headline: "Enhorabona!"
         message: "Ara expliqueu-ne els detalls"
-        success: "Enhorabona! %{enterprise} s'ha afegit a Open Food Network"
+        success: "Enhorabona! %{enterprise} s'ha afegit a Campviu"
         registration_exit_message: "Si surts de l'assistent en qualsevol moment, podràs continuar creant el teu perfil anant a la interfície d'administració."
         enterprise_description: "Descripció breu"
         enterprise_description_placeholder: "Una frase breu que descrigui la teva organització"
@@ -1983,7 +1983,7 @@ ca:
         enterprise_final_step: "Pas final!"
         enterprise_social_text: "Com poden la gent trobar %{enterprise}en línia?"
         website: "Lloc web"
-        website_placeholder: "per exemple: katuma.org"
+        website_placeholder: "per exemple: Campviu.org"
         facebook: "Facebook"
         facebook_placeholder: "p .ex: www.facebook.com/NomDeLaPàgina"
         linkedin: "LinkedIn"
@@ -2000,7 +2000,7 @@ ca:
       finished:
         headline: "Acabat!"
         thanks: "Gràcies per omplir els detalls de%{enterprise}."
-        login: "Pots canviar o actualitzar la teva organització en qualsevol moment accedint a Katuma i anant a Admin."
+        login: "Pots canviar o actualitzar la teva organització en qualsevol moment accedint a Campviu i anant a Admin."
         action: "Vés al panell de control de l'organització"
   back: "Enrere"
   continue: "Continua"
@@ -2430,7 +2430,7 @@ ca:
   enterprise_register_success_notice: "Enhorabona! El registre de %{enterprise} s'ha completat!"
   enterprise_bulk_update_success_notice: "Les organitzacions s'han actualitzat correctament"
   enterprise_bulk_update_error: 'No s''ha pogut actualitzar'
-  enterprise_shop_show_error: "La botiga que busqueu no existeix o està inactiva a OFN. Consulteu altres botigues."
+  enterprise_shop_show_error: "La botiga que busqueu no existeix o està inactiva a Campviu. Consulteu altres botigues."
   order_cycles_create_notice: 'S''ha creat el cicle de comanda.'
   order_cycles_update_notice: 'S''ha actualitzat el cicle de comanda.'
   order_cycles_bulk_update_notice: 'S''han actualitzat els cicles de comanda.'
@@ -2522,12 +2522,12 @@ ca:
               cercar a les llistes.
           hub_profile_text2: >
               Tenir un perfil i fer contactes amb vostre moviment alimentari local
-              a través d'Open Food Network sempre serà gratuït.
+              a través d'Campviu sempre serà gratuït.
           hub_shop: Botiga
           hub_shop_text1: >
               La teva organització és la columna vertebral del vostre sistema alimentari
               local. Afegeix productes d'altres organitzacions productores i ven-los
-              a través de la vostra botiga a Katuma.
+              a través de la vostra botiga a Campviu.
           hub_shop_text2: >
               Els grups poden prendre moltes formes, ja siguin una cooperativa d'aliments,
               un grup de compra, o una botiga de queviures local, un supermercat cooperatiu.
@@ -2548,14 +2548,14 @@ ca:
               de compartir la teva història.
           profile_only_text2: >
               Si prefereixes concentrar-te en produir menjar i vols deixar la feina
-              de vendre'l a una altra persona, no necessitaràs una botiga Katuma.
+              de vendre'l a una altra persona, no necessitaràs una botiga Campviu.
           profile_only_text3: >
-              Afegeix els teus productes a Katuma, permetent que els grups de consum
+              Afegeix els teus productes a Campviu, permetent que els grups de consum
               o altres puguin emmagatzemar-los a les seves botigues.
           producer_shop: Productora amb botiga
           producer_shop_text1: >
               Ven els teus productes directament a les consumidores a través de la
-              teva pròpia botiga a Katuma.
+              teva pròpia botiga a Campviu.
           producer_shop_text2: >
               Una botiga de productores només és per als teus productes, si vols vendre
               productes produïts / cultivats per un altre, selecciona "Grup de productores"
@@ -2563,13 +2563,13 @@ ca:
           producer_hub_text1: >
               La teva organització és la columna vertebral del vostre sistema alimentari
               local. Pots vendre els vostres propis productes i productes agregats
-              d'altres organitzacions a través de la vostra botiga a Katuma.
+              d'altres organitzacions a través de la vostra botiga a Campviu.
           producer_hub_text2: >
               Un grup pot prendre moltes formes, ja siguin una cooperativa de consum,
               un programa de cistelles o un hort comunitari que produeix per als seus
               socis.
           producer_hub_text3: >
-              L'Open Food Network té com a objectiu donar suport a tots els models
+              L'Campviu té com a objectiu donar suport a tots els models
               de grups possibles, de manera que, independentment de la teva situació,
               volem proporcionar les eines que necessites per executar la teva organització
               o empresa alimentària local.
@@ -2585,11 +2585,11 @@ ca:
               si cultives, cries, fermentes, cous pa, vens llet, fas formatges...
           producer_text2: >
               Les productores també poden realitzar altres funcions, com ara agregar
-              productes d'altres productores i vendre-la a través d'una botiga a Katuma.
+              productes d'altres productores i vendre-la a través d'una botiga a Campviu.
           non_producer: No productora
           non_producer_text1: >
               Les no-productores no produeixen cap aliment, per la qual cosa no poden
-              crear productes propis per vendre a través de Katuma.
+              crear productes propis per vendre a través de Campviu.
           non_producer_text2: >
               En canvi, les no-productores s'especialitzen en vincular les productores
               amb el consumidor final, ja sigui classificant, envasant, venent o lliurant
@@ -2784,7 +2784,7 @@ ca:
       users:
         order: "Comanda"
     registration:
-      welcome_to_ofn: "Benvingut a Katuma - Open Food Network!"
+      welcome_to_ofn: "Benvingut a Campviu - Campviu!"
       signup_or_login: "Comenceu registrant-vos (o iniciant sessió)"
       have_an_account: "Ja tens un compte?"
       action_login: "Inicia la sessió ara."
@@ -3084,7 +3084,7 @@ ca:
     display_currency: "Moneda de visualització"
     choose_currency: "Escull la moneda"
     mail_method_settings: "Configuració del mètode de correu"
-    mail_settings_notice_html: "Algunes de les opcions de configuració següents no es poden editar i es mostren aquí només amb finalitats de depuració. Es poden fer canvis actualitzant els secrets de la instància i provisionant-los mitjançant <a href='https://github.com/openfoodfoundation/ofn-install'>ofn-install</a> . Contacteu amb l'equip global d'OFN per obtenir més informació."
+    mail_settings_notice_html: "Algunes de les opcions de configuració següents no es poden editar i es mostren aquí només amb finalitats de depuració. Es poden fer canvis actualitzant els secrets de la instància i provisionant-los mitjançant <a href='https://github.com/openfoodfoundation/ofn-install'>ofn-install</a> . Contacteu amb l'equip global d'Campviu per obtenir més informació."
     general: "General"
     enable_mail_delivery: "Habilita el lliurament de correu"
     send_mails_as: "Enviar missatges com"
@@ -3333,7 +3333,7 @@ ca:
           order_total: "Total comanda"
       overview:
         enterprises_header:
-          ofn_with_tip: Les organitzacions són productores i/o grups de consum i són la unitat bàsica d'organització dins d'Open Food Network.
+          ofn_with_tip: Les organitzacions són productores i/o grups de consum i són la unitat bàsica d'organització dins d'Campviu.
         enterprise_row:
           has_no_enterprise_fees: "no té comissions d'organització"
           has_no_payment_methods: "no té mètodes de pagament"
@@ -3648,10 +3648,10 @@ ca:
             Si continues tenint problemes, no dubtis en contactar-nos.
         subject: "Instruccions per restablir la contrasenya"
       confirmation_instructions:
-        subject: "Si us plau confirma el teu compte d'OFN"
+        subject: "Si us plau confirma el teu compte de Campviu"
     payment_mailer:
       authorize_payment:
-        subject: "Autoritzeu el vostre pagament a %{distributor} a OFN"
+        subject: "Autoritzeu el vostre pagament a %{distributor} a Campviu"
         instructions: "El vostre pagament de %{amount} a %{distributor} requereix una autenticació addicional. Visiteu l’URL següent per autoritzar el vostre pagament:"
       authorization_required:
         subject: "Un pagament requereix l’autorització del client"
