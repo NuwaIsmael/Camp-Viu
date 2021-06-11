@@ -4,7 +4,6 @@
 
 #panes
 
-%section{:"ng-app" => "demo"}
 %section.faq_page{:"ng-controller" => "FaqController"}
   .row
     %h1
@@ -15,3 +14,4 @@
         %p {{item.resposta}}
 
 = render "shared/footer"
+#lang= @langvar

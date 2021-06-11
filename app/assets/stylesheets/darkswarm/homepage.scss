@@ -64,7 +64,7 @@
 
 .brandstory_button{
   display: inline-block;
-  margin: 30px auto 25px auto;
+  margin: 75px auto 25px auto;
   padding: 12px 30px 12px 30px;
   border: 3px solid #9EA720;
   color: #9EA720;
@@ -133,6 +133,11 @@
   display: inline-block;
   padding: 12px;
   text-align: center;
+}
+
+.home_block_header img{
+  height: 200px;
+  width: auto;
 }
 
 .bg_home_features_body .home-icon-box-bottom h4{
@@ -211,6 +216,10 @@
 
 .bg_home_rbinfo_header{
   background-color: #F0B72A;
+}
+
+.bg_home_rbinfo_header img{
+  height: 115px;
 }
 
 .bg_home_rbinfo_body{
@@ -339,8 +348,8 @@
     padding: 75px 15px 90px 15px;
   }
   .home_block_header_logo{
-    height: auto !important;
   }
+
   .footer-local{
     padding: 24px;
   }

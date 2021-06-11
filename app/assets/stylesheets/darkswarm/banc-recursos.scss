@@ -1,0 +1,107 @@
+.brecursos_header{
+  height: 385px;
+  padding: 45px;
+  text-align: center;
+  color: #ffffff !important;
+  background-color: green;
+  background-image: image-url("brecursos/header.png");
+  background-size: cover;
+}
+
+.brecursos_header h1{
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.brecursos_header h1, .brecursos_header h2{
+  color: #ffffff;
+}
+
+.brecursos_header img{ height: 200px; margin-bottom: 30px;}
+
+.brecursos_section_header{
+  text-align: center;
+  padding: 51px 15px 51px 15px;
+  background-color: #eeeeee;
+}
+
+.brecursos_section_header h2{
+  color: #F0B72A;
+}
+
+
+.brecursos_block{
+  padding: 92px;
+}
+
+.brecursos_block h2{
+  text-align: center;
+  font-size: 60px;
+  color: #9F5C1E;
+  margin-bottom: 75px;
+}
+
+.brecursos_block p{
+  margin-top: 20px;
+}
+
+.brecursos_block_title, .brecursos_block p{
+  color: #583311;
+}
+
+.brecursos_block_title{
+  font-size: 25px;
+}
+
+.brecursos_block_description{
+  font-size: 20px;
+}
+
+.brecursos_block a{
+  display: block;
+  width: 300px;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  margin: 85px auto 85px auto;
+  border: 3px solid #9F5C1E;
+  color: #9F5C1E;
+}
+
+.brecursos_block a:hover{
+  color: #ffffff;
+  background-color: #9F5C1E;
+}
+
+
+@media screen and ( max-width: 768px ) {
+  .brecursos_header{
+    padding: 0px;
+  }
+  .brecursos_info{
+    padding: 45px !important;
+  }
+  .brecursos_videos{
+    padding: 45px !important;
+  }
+  .brecursos_block{
+    padding: 25px;
+  }
+  .brecursos_block a{
+    width: auto;
+  }
+  .brecursos_map{
+    padding: 45px 0px 0px 0px;
+  }
+
+  .brecursos_block a{
+    margin: 0;
+  }
+
+  .brecursos_bonline a{
+    width: auto;
+  }
+}
+
+
+@media screen and ( max-width: 1457px ) {
+}

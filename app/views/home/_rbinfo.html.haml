@@ -1,6 +1,7 @@
 .home_block
   .home_block_header.bg_home_rbinfo_header
     .row
+      %img{:src => "{{home_block_3.header.icona}}"}
       %h1 {{home_block_3.header.titol}}
       %h2 {{home_block_3.header.claim}}
   .home_block_body.bg_home_rbinfo_body.text-center
@@ -9,7 +10,7 @@
     .row
       .small-12.medium-3.columns
         .home-icon-box
-          %img{:height => "68px", :src => "{{home_block_3_icon1.icona}}"}
+          %img{:style => "68px", :src => "{{home_block_3_icon1.icona}}"}
         .home-icon-box-bottom
           %h4 {{home_block_3_icon1.titol}}
           %p.text-normal {{home_block_3_icon1.claim}}
@@ -32,5 +33,5 @@
           %h4 {{home_block_3_icon4.titol}}
           %p.text-normal {{home_block_3_icon4.claim}}
     .row
-      %a{:href => ""}
+      %a{:href => "/banc-recursos"}
         = t :home_block_link_text

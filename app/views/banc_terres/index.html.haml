@@ -1,8 +1,3 @@
-- content_for :injection_data do
-  = inject_available_countries
-  = inject_enterprise_shopfront_list
-  = inject_open_street_map_config
-
 :css
   #tagline:before { background-image: url("#{ContentConfig.home_hero.url}") }
 
@@ -10,105 +5,38 @@
 
 
 #panes
-%section.faq{:"ng-controller" => "PMarketController"}
-  #pmarket_calendar_open
-    %svg.h-6.w-6{:fill => "none", :stroke => "currentColor", :viewbox => "0 0 24 24", :xmlns => "http://www.w3.org/2000/svg"}
-      %path{:d => "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z", "stroke-linecap" => "round", "stroke-linejoin" => "round", "stroke-width" => "2"}
-    Calendari
-  #pmarket_calendar.hidden
-    %span#pmarket_calendar_close
-      %svg.h-6.w-6{:fill => "none", :stroke => "currentColor", :viewbox => "0 0 24 24", :xmlns => "http://www.w3.org/2000/svg"}
-        %path{:d => "M13 5l7 7-7 7M5 5l7 7-7 7", "stroke-linecap" => "round", "stroke-linejoin" => "round", "stroke-width" => "2"}
-    %h2
-      = t :pmarket_calendar
-    %table.pmarket_calendar_table
-      %tr{:"ng-repeat" => "item in esdeveniments track by $index"}
-        %td.col1 {{item.nom}}
-        %td.col2 {{item.data}}
-        %td.col3 {{item.lloc}}
-  .pmarket_header
-    %img{:src => "{{content.header_block.logo}}"}
+%section.bterres{:"ng-controller" => "BTerresController"}
+  .bterres_header
     %h1
-      {{content.header_block.titol}}
-  .pmarket_info
+      %img{:height => "68px", :src => "{{content.header_logo}}"}
+      %h1  {{content.header_titol}}
+  .bterres_info
     .row
       %h2 {{normal_block_1.titol}}
-      %p
-        {{normal_block_1.descripcio}}
-    .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
-      .responsive-embed-widescreen
-        %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
+      %div{"ng-bind-html" => "normal_block_1.text"}
 
-  .pmarket_videos
+  .bterres_block
+    .row
+      %h2 {{content.com_funciona.titol}}
+      %div{"ng-bind-html" => "content.com_funciona.contingut"}
+      %a{:href => "{{content.com_funciona.link_url}}"} {{content.com_funciona.link_text}}
+      %p {{content.com_funciona.link_description}}
+
+  .bterres_block
+    .row
+      %h2 {{content.who_block.titol}}
+      %div{:"ng-repeat" => "item in content.who_block.who_block_repeater track by $index"}
+        {{item.text}}
+      %p {{content.who_block.text_separador}}
+      %div{:"ng-repeat" => "item in content.who_block.who_block_repeater_2 track by $index"}
+        {{item.text}}
+
+  .bterres_block
     .row
       %h2 {{normal_block_2.titol}}
-    .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
-      .responsive-embed-widescreen
-        %iframe{allowfullscreen: "", frameborder: "0", height: "349", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "560"}
-
-  .pmarket_producers
-    .row
-      %h2 {{content.producers_block.titol}}
-      .small-12.medium-4.columns
-        %h3.pmarket_producers_title {{producers_block_icon1.titol}}
-        %br/
-        %img{:src => "{{producers_block_icon1.image}}"}
-        %br/
-        %pmarket_producers_description{"ng-bind-html" => "producers_block_icon1.descripcio"}
-
-      .small-12.medium-4.columns
-        %h3.pmarket_producers_title {{producers_block_icon2.titol}}
-        %br/
-        %img{:src => "{{producers_block_icon2.image}}"}
-        %br/
-        %pmarket_producers_description{"ng-bind-html" => "producers_block_icon2.descripcio"}
-      .small-12.medium-4.columns
-        %h3.pmarket_producers_title {{producers_block_icon3.titol}}
-        %br/
-        %img{:src => "{{producers_block_icon3.image}}"}
-        %br/
-        %pmarket_producers_description{"ng-bind-html" => "producers_block_icon3.descripcio"}
-    %a{:href => "#"} {{content.producers_block.button_text}}
-
-  .pmarket_map
-    .row
-      %h1 {{content.map_block.titol}}
-      %p  {{content.map_block.descripcio}}
-      %div#map2
-      %a{:href => "#"} {{content.map_block.button_text}}
-
-  .pmarket_bonline
-    %h2 {{content.shop_online_block.titol}}
-    %p
-      {{content.shop_online_block.descripcio}}
-    .small-12.medium-6.columns.text-right
-      %img{:height => "68px", :src => "{{content.shop_online_block.imatge}}"}
-    .row
-      .small-12.medium-6.columns.pmarket_bonline_links
-        %a{:href => "#"} {{shop_online_block_link1.text}}
-        %a{:href => "#"} {{shop_online_block_link2.text}}
-        %a{:href => "#"} {{shop_online_block_link3.text}}
-
-  .pmarket_counter
-    .row
-      %h2
-        = t :pmarket_counter_title
-      .small-12.medium-4.columns
-        %span.pmarket_counter_number
-          %strong= number_with_delimiter @num_distributors
-        %span.pmarket_counter_name
-          = t :pmarket_counter_1
-      .small-12.medium-4.columns
-        %span.pmarket_counter_number
-          %strong= number_with_delimiter @num_products
-        %span.pmarket_counter_name
-          = t :pmarket_counter_2
-      .small-12.medium-4.columns
-        %span.pmarket_counter_number
-          %strong= number_with_delimiter @num_producers
-        %span.pmarket_counter_name
-          = t :pmarket_counter_3
+      %div{"ng-bind-html" => "normal_block_2.text"}
 
   = render "shared/footer"
+  #lang= @langvar
 
 %script{:src => "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"}

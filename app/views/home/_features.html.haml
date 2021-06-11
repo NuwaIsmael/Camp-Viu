@@ -1,7 +1,7 @@
 .home_block
   .home_block_header.bg_home_features_header
     .row
-      =image_tag  "logo-banc-de-terres.png"
+      =image_tag  "home/logo_banc_terres_white.svg", :height => "200px"
       %h2 {{home_block_2.header.claim}}
   .home_block_body.bg_home_features_body.text-center
     .row
@@ -32,5 +32,5 @@
           %h4 {{home_block_2_icon4.titol}}
           %p.text-normal {{home_block_2_icon4.claim}}
     .row
-      %a{:href => ""}
+      %a{:href => "/banc-terres"}
         = t :home_block_link_text

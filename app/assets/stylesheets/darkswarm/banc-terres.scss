@@ -1,0 +1,117 @@
+.bterres_header{
+  height: 385px;
+  padding: 45px;
+  text-align: center;
+  color: #ffffff !important;
+  background-color: green;
+  background-image: image-url("banc_terres_header.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bterres p{
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.bterres_header h1{
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.bterres_header h1, .bterres_header h2{
+  color: #ffffff;
+}
+
+.bterres_header img{ height: 200px; margin-bottom: 30px;}
+
+.bterres_info{
+  padding: 90px 350px 90px 350px;
+  text-align: center;
+}
+
+.bterres_info h2{
+  color: #583311;
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+
+.bterres_videos{
+  padding: 90px 350px 90px 350px;
+  background-color: #5833111A;
+  text-align: center;
+}
+
+
+.bterres_block{
+  padding: 92px;
+  background-color: #B7831C4D;
+}
+
+.bterres_block h2{
+  text-align: center;
+  font-size: 60px !important;
+  color: #9F5C1E;
+  margin-bottom: 75px;
+}
+
+.bterres_block p{
+  margin-top: 20px;
+}
+
+.bterres_block_title{
+  font-size: 25px;
+}
+
+.bterres_block_description{
+  font-size: 20px;
+}
+
+.bterres_block a{
+  display: block;
+  width: 300px;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  margin: 85px auto 25px auto;
+  border: 3px solid #9F5C1E;
+  color: #9F5C1E;
+}
+
+.bterres_block .ng-binding{
+  line-height: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+
+@media screen and ( max-width: 768px ) {
+  .bterres_header{
+    padding: 0px;
+  }
+  .bterres_info{
+    padding: 45px !important;
+  }
+  .bterres_videos{
+    padding: 45px !important;
+  }
+  .bterres_block{
+    padding: 25px;
+  }
+  .bterres_block a{
+    width: auto;
+  }
+  .bterres_map{
+    padding: 45px 0px 0px 0px;
+  }
+
+  .bterres_block a{
+    margin: 0;
+  }
+
+}
+
+
+@media screen and ( max-width: 1457px ) {
+}

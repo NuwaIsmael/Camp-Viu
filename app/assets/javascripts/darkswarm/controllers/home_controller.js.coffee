@@ -63,6 +63,9 @@ Darkswarm.controller "HomeCtrl", ($scope, $http) ->
       openBrandstory.classList.remove 'hidden'
 
 
+filter 'trusted', ($sce) ->
+  (url) ->
+    $sce.trustAsResourceUrl url
 
 
 # ---

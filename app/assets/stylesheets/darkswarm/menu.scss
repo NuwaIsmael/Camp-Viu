@@ -305,7 +305,7 @@ nav.top-bar {
   }
 }
 
-.lenguage-switcher > a{
+.language-switcher > a{
   background-color: white;
   color: #F08823 !important;
 }
@@ -323,6 +323,10 @@ nav.top-bar {
 
 .nav-main-menu-social img{
   margin-right: 15px;
+}
+
+.top-bar--menu-item-with-icon span{
+  color: #ffffff;
 }
 
 .top-bar-section ul li:hover:not(.has-form) > a{
