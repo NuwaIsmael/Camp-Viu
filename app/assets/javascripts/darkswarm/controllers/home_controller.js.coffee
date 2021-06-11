@@ -6,7 +6,7 @@ Darkswarm.controller "HomeCtrl", ($scope, $http) ->
 
   x = document.getElementById('lang').textContent
   $http.get('https://www.distracted-driscoll.135-125-232-65.plesk.page/wp-json/wp/v2/pages/5').success (content) ->
-    $scope.content = content.acf[x]
+    $scope.content = content.acf["ca"]
     #Carreguem la informació de cada block a les variables per ser utilitzades posteriorment.
     array = Object.values($scope.content.block)
     $scope.home_block_1 = JSON.parse(JSON.stringify(array[0]))

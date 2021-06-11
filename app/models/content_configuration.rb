@@ -68,8 +68,8 @@ class ContentConfiguration < Spree::Preferences::FileConfiguration
   preference :footer_linkedin_url, :string, default: "https://www.linkedin.com/company/openfoodnetwork/"
   preference :footer_googleplus_url, :string, default: ""
   preference :footer_pinterest_url, :string, default: ""
-  preference :footer_email, :string, default: "hello@openfoodnetwork.org"
-  preference :community_forum_url, :string, default: "http://community.openfoodnetwork.org"
+  preference :footer_email, :string, default: "info@campviu.cat"
+  preference :community_forum_url, :string, default: "http://campviu.cat"
   preference :footer_links_md, :text, default: <<-EOS.strip_heredoc
     [Newsletter sign-up](/)
 

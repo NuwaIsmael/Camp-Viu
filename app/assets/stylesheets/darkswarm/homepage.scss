@@ -70,6 +70,11 @@
   color: #9EA720;
 }
 
+.brandstory_button:hover{
+  color: #ffffff;
+  background-color: #9EA720;
+}
+
 .btn_orange{
   background-color: #F08823;
   color: #ffffff;
@@ -159,6 +164,11 @@
   color: #9EA720;
 }
 
+.bg_home_features_body a:hover{
+    color: #ffffff;
+    background-color: #9EA720;
+}
+
 #brand-story h2{
   font-size: 60px;
   color: #4D5A0C;
@@ -177,7 +187,7 @@
   color: #4D5A0C;
 }
 
-#brand-story .home-icon-box-bottom p{
+#brand-story .home-icon-box-bottom a{
   color: #F08823;
   text-transform: uppercase;
   text-decoration: underline;
@@ -219,6 +229,11 @@
   color: #F0B72A;
 }
 
+.bg_home_rbinfo_body a:hover{
+  color: #ffffff;
+  background-color: #F0B72A;
+}
+
 .bg_home_rbinfo_body h4{
   color: #F0B72A;
 }
@@ -245,6 +260,11 @@
 .bg_home_fminfo_body a{
   border: 3px solid #F08823;
   color: #F08823;
+}
+
+.bg_home_fminfo_body a:hover{
+  color: #ffffff;
+  background-color: #F08823;
 }
 
 .header_learn_title{
