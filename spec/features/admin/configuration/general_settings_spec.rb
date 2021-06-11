@@ -14,20 +14,20 @@ describe "General Settings" do
   context "visiting general settings (admin)" do
     it "should have the right content" do
       expect(page).to have_content("General Settings")
-      expect(find("#site_name").value).to eq("OFN Demo Site")
-      expect(find("#site_url").value).to eq("demo.openfoodnetwork.org")
+      expect(find("#site_name").value).to eq("Campviu")
+      expect(find("#site_url").value).to eq("campviu.cat")
     end
   end
 
   context "editing general settings (admin)" do
     it "should be able to update the site name" do
-      fill_in "site_name", with: "OFN Demo Site99"
+      fill_in "site_name", with: "Campviu"
       click_button "Update"
 
       within("[class='flash success']") do
         expect(page).to have_content(Spree.t(:successfully_updated, resource: Spree.t(:general_settings)))
       end
-      expect(find("#site_name").value).to eq("OFN Demo Site99")
+      expect(find("#site_name").value).to eq("Campviu")
     end
   end
 
