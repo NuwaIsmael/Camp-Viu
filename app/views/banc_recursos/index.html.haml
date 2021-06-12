@@ -15,116 +15,118 @@
     %img{:height => "68px", :src => "{{content.header_logo}}"}
     %h1  {{content.header_titol}}
 
-  .brecursos_section_header
-    %img{:height => "68px", :src => "{{content.banc_eines.logo}}"}
-    %h2  {{content.banc_eines.titol}}
+  %section{:id => "eines"}
+    .brecursos_section_header
+      %img{:height => "68px", :src => "{{content.banc_eines.logo}}"}
+      %h2  {{content.banc_eines.titol}}
 
-  .brecursos_block
-    .row
-      %h2 {{content.banc_eines.subtitol_1}}
-      %div{"ng-bind-html" => "content.banc_eines.contingut_1"}
-  .brecursos_block
-    .row
-      %h2 {{content.banc_eines.subtitol_2}}
-      %div{"ng-bind-html" => "content.banc_eines.contingut_2"}
-  .brecursos_block
-    .row
-      .small-12.medium-12.columns
-        %h2 {{content.banc_eines.subtitol_3}}
-        %div{"ng-bind-html" => "content.banc_eines.contingut_3"}
-      .small-12.medium-4.columns
-        %a{:href => "{{content.banc_eines.link1_url}}"} {{content.banc_eines.link1_text}}
-      .small-12.medium-4.columns
-        %a{:href => "{{content.banc_eines.link2_url}}"} {{content.banc_eines.link2_text}}
-      .small-12.medium-4.columns
-        %a{:href => "{{content.banc_eines.link3_url}}"} {{content.banc_eines.link3_text}}
-  .brecursos_block
-    .row
-      %h2 {{content.banc_eines.subtitol_4}}
-      %div{"ng-bind-html" => "content.banc_eines.contingut_4"}
-  .brecursos_block
-    .row
-      %h2 {{content.banc_eines.subtitol_5}}
-      %div{"ng-bind-html" => "content.banc_eines.contingut_5"}
-      %a{:href => "{{content.com_funciona.link_url}}"} {{content.banc_eines.link_text}}
+    .brecursos_block
+      .row
+        %h2 {{content.banc_eines.subtitol_1}}
+        %div{"ng-bind-html" => "content.banc_eines.contingut_1"}
+    .brecursos_block
+      .row
+        %h2 {{content.banc_eines.subtitol_2}}
+        %div{"ng-bind-html" => "content.banc_eines.contingut_2"}
+    .brecursos_block
+      .row
+        .small-12.medium-12.columns
+          %h2 {{content.banc_eines.subtitol_3}}
+          %div{"ng-bind-html" => "content.banc_eines.contingut_3"}
+        .small-12.medium-4.columns
+          %a{:href => "{{content.banc_eines.link1_url}}"} {{content.banc_eines.link1_text}}
+        .small-12.medium-4.columns
+          %a{:href => "{{content.banc_eines.link2_url}}"} {{content.banc_eines.link2_text}}
+        .small-12.medium-4.columns
+          %a{:href => "{{content.banc_eines.link3_url}}"} {{content.banc_eines.link3_text}}
+    .brecursos_block
+      .row
+        %h2 {{content.banc_eines.subtitol_4}}
+        %div{"ng-bind-html" => "content.banc_eines.contingut_4"}
+    .brecursos_block
+      .row
+        %h2 {{content.banc_eines.subtitol_5}}
+        %div{"ng-bind-html" => "content.banc_eines.contingut_5"}
+        %a{:href => "{{content.com_funciona.link4_url}}"} {{content.banc_eines.link4_text}}
 
-  .brecursos_section_header
-    %img{:height => "68px", :src => "{{content.banc_de_temps.logo}}"}
-    %h2  {{content.banc_de_temps.titol}}
-  .brecursos_block
-    .row
-      %h2 {{content.banc_de_temps.subtitol_1}}
-      %div{"ng-bind-html" => "content.banc_de_temps.contingut_1"}
-  .brecursos_block
-    .row
-      %h2 {{content.banc_de_temps.subtitol_2}}
-      %div{"ng-bind-html" => "content.banc_de_temps.contingut_2"}
-  .brecursos_block
-    .row
-      %h2 {{content.banc_de_temps.subtitol_3}}
-      %div{"ng-bind-html" => "content.banc_de_temps.contingut_3"}
-  .brecursos_block
-    .row
-      .small-12.medium-12.columns
-        %h2 {{content.banc_de_temps.subtitol_4}}
-        %div{"ng-bind-html" => "content.banc_de_temps.contingut_4"}
-      .small-12.medium-6.columns
-        %a{:href => "{{content.banc_de_temps.link1_url}}"} {{content.banc_de_temps.link1_text}}
-      .small-12.medium-6.columns
-        %a{:href => "{{content.banc_de_temps.link2_url}}"} {{content.banc_de_temps.link2_text}}
-      .small-12.medium-12.columns
-        %div{"ng-bind-html" => "content.banc_de_temps.contingut_4_2"}
-  .brecursos_block
-    .row
-      %h2 {{content.banc_eines.subtitol_5}}
-      %div{"ng-bind-html" => "content.banc_eines.contingut_5"}
-      %a{:href => "{{content.com_funciona.link_url}}"} {{content.banc_eines.link_text}}
+  %section{:id => "temps"}
+    .brecursos_section_header
+      %img{:height => "68px", :src => "{{content.banc_de_temps.logo}}"}
+      %h2  {{content.banc_de_temps.titol}}
+    .brecursos_block
+      .row
+        %h2 {{content.banc_de_temps.subtitol_1}}
+        %div{"ng-bind-html" => "content.banc_de_temps.contingut_1"}
+    .brecursos_block
+      .row
+        %h2 {{content.banc_de_temps.subtitol_2}}
+        %div{"ng-bind-html" => "content.banc_de_temps.contingut_2"}
+    .brecursos_block
+      .row
+        %h2 {{content.banc_de_temps.subtitol_3}}
+        %div{"ng-bind-html" => "content.banc_de_temps.contingut_3"}
+    .brecursos_block
+      .row
+        .small-12.medium-12.columns
+          %h2 {{content.banc_de_temps.subtitol_4}}
+          %div{"ng-bind-html" => "content.banc_de_temps.contingut_4"}
+        .small-12.medium-6.columns
+          %a{:href => "{{content.banc_de_temps.link1_url}}"} {{content.banc_de_temps.link1_text}}
+        .small-12.medium-6.columns
+          %a{:href => "{{content.banc_de_temps.link2_url}}"} {{content.banc_de_temps.link2_text}}
+        .small-12.medium-12.columns
+          %div{"ng-bind-html" => "content.banc_de_temps.contingut_4_2"}
+    .brecursos_block
+      .row
+        %h2 {{content.banc_de_temps.subtitol_5}}
+        %a{:href => "{{content.banc_de_temps.link3_url}}"} {{content.banc_de_temps.link3_text}}
 
-  .brecursos_section_header
-    %img{:height => "68px", :src => "{{content.mediateca.logo}}"}
-    %h2  {{content.mediateca.titol}}
-  .brecursos_block
-    .row
-      %h2 {{content.mediateca.subtitol_1}}
-      %div{"ng-bind-html" => "content.mediateca.contingut_1"}
-  .brecursos_block
-    .row
-      %h2 {{content.mediateca.subtitol_2}}
-      %div{"ng-bind-html" => "content.mediateca.contingut_2"}
-  .brecursos_block
-    .row
-      %h2 {{content.mediateca.subtitol_3}}
-      %div{"ng-bind-html" => "content.mediateca.contingut_3"}
-  .brecursos_block
-    .row
-      .small-12.medium-12.columns
-        %h2 {{content.mediateca.subtitol_4}}
-        %div{"ng-bind-html" => "content.mediateca.contingut_4"}
-  .brecursos_block
-    .row
-      %h2 {{content.mediateca.subtitol_5}}
-      %div{"ng-bind-html" => "content.mediateca.contingut_5"}
-      %a{:href => "{{content.mediateca.link_url}}"} {{content.mediateca.link_text}}
+  %section{:id => "mediateca"}
+    .brecursos_section_header
+      %img{:height => "68px", :src => "{{content.mediateca.logo}}"}
+      %h2  {{content.mediateca.titol}}
+    .brecursos_block
+      .row
+        %h2 {{content.mediateca.subtitol_1}}
+        %div{"ng-bind-html" => "content.mediateca.contingut_1"}
+    .brecursos_block
+      .row
+        %h2 {{content.mediateca.subtitol_2}}
+        %div{"ng-bind-html" => "content.mediateca.contingut_2"}
+    .brecursos_block
+      .row
+        %h2 {{content.mediateca.subtitol_3}}
+        %div{"ng-bind-html" => "content.mediateca.contingut_3"}
+    .brecursos_block
+      .row
+        .small-12.medium-12.columns
+          %h2 {{content.mediateca.subtitol_4}}
+          %div{"ng-bind-html" => "content.mediateca.contingut_4"}
+    .brecursos_block
+      .row
+        %h2 {{content.mediateca.subtitol_5}}
+        %a{:href => "{{content.mediateca.link1_url}}"} {{content.mediateca.link1_text}}
 
-  .brecursos_section_header
-    %img{:height => "68px", :src => "{{content.cprovisions.logo}}"}
-    %h2  {{content.cprovisions.titol}}
-  .brecursos_block
-    .row
-      %h2 {{content.cprovisions.subtitol_1}}
-      %div{"ng-bind-html" => "content.cprovisions.contingut_1"}
-  .brecursos_block
-    .row
-      %h2 {{content.cprovisions.subtitol_2}}
-      %div{"ng-bind-html" => "content.cprovisions.contingut_2"}
-  .brecursos_block
-    .row
-      %h2 {{content.cprovisions.subtitol_3}}
-      %div{"ng-bind-html" => "content.cprovisions.contingut_3"}
-  .brecursos_block
-    .row
-      %h2 {{content.cprovisions.subtitol_4}}
-      %a{:href => "{{content.cprovisions.link1_url}}"} {{content.cprovisions.link1_text}}
+  %section{:id => "central-provisions"}
+    .brecursos_section_header
+      %img{:height => "68px", :src => "{{content.cprovisions.logo}}"}
+      %h2  {{content.cprovisions.titol}}
+    .brecursos_block
+      .row
+        %h2 {{content.cprovisions.subtitol_1}}
+        %div{"ng-bind-html" => "content.cprovisions.contingut_1"}
+    .brecursos_block
+      .row
+        %h2 {{content.cprovisions.subtitol_2}}
+        %div{"ng-bind-html" => "content.cprovisions.contingut_2"}
+    .brecursos_block
+      .row
+        %h2 {{content.cprovisions.subtitol_3}}
+        %div{"ng-bind-html" => "content.cprovisions.contingut_3"}
+    .brecursos_block
+      .row
+        %h2 {{content.cprovisions.subtitol_4}}
+        %a{:href => "{{content.cprovisions.link1_url}}"} {{content.cprovisions.link1_text}}
 
   = render "shared/footer"
   #lang= @langvar

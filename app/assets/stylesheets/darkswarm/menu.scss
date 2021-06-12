@@ -291,6 +291,12 @@ nav.top-bar {
   }
 }
 
+@media screen and ( max-width: 1457px ) {
+  .nav-main-menu-social{
+    display: none !important;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   body.off-canvas {
     // padding required to placehold for fixed menu bar
@@ -304,6 +310,7 @@ nav.top-bar {
     padding-top: 0;
   }
 }
+
 
 .language-switcher > a{
   background-color: white;

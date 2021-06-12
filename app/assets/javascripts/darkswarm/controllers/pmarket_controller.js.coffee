@@ -24,6 +24,7 @@ Darkswarm.controller "PMarketController", ($scope, $http, $log) ->
     $scope.esdeveniments = content.acf.calendari.event
 
     openCalendarBtn = document.getElementById('pmarket_calendar_open')
+    openCalendarBtn2 = document.getElementById('pmarket_calendar_open2')
     closeCalendarBtn = document.getElementById('pmarket_calendar_close')
     calendar = document.getElementById('pmarket_calendar')
 
@@ -31,6 +32,9 @@ Darkswarm.controller "PMarketController", ($scope, $http, $log) ->
       calendar.classList.add 'hidden'
 
     openCalendarBtn.addEventListener 'click', ->
+        calendar.classList.remove 'hidden'
+
+    openCalendarBtn2.addEventListener 'click', ->
         calendar.classList.remove 'hidden'
 
     map2 = undefined

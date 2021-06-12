@@ -9,55 +9,49 @@
   background-position: center;
 }
 
-.bterres p{
-  line-height: 30px;
-  font-size: 18px;
-}
-
 .bterres_header h1{
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
-.bterres_header h1, .bterres_header h2{
   color: #ffffff;
+  text-transform: uppercase;
+  font-size: 60px;
 }
 
 .bterres_header img{ height: 200px; margin-bottom: 30px;}
 
-.bterres_info{
-  padding: 90px 350px 90px 350px;
+.bterres_section_header{
   text-align: center;
+  padding: 51px 15px 51px 15px;
 }
 
-.bterres_info h2{
-  color: #583311;
+.bterres_section_header h2{
   font-size: 60px;
-  margin-bottom: 25px;
+  color: #9EA720;
 }
-
-
-.bterres_videos{
-  padding: 90px 350px 90px 350px;
-  background-color: #5833111A;
-  text-align: center;
-}
-
 
 .bterres_block{
-  padding: 92px;
-  background-color: #B7831C4D;
+}
+
+.bterres_block, .bterres_block p {
+  padding: 2rem 0 4rem 0;
+  color: #3B3B3B;
+}
+
+.bterres_block div.ng-binding {
+    font-size: 22px;
 }
 
 .bterres_block h2{
   text-align: center;
-  font-size: 60px !important;
-  color: #9F5C1E;
-  margin-bottom: 75px;
+  font-size: 48px;
+  color: #4D5A0C;
 }
 
 .bterres_block p{
   margin-top: 20px;
+}
+
+.bterres_block p{
+  color: #3B3B3B;
+  font-size: 22px;
 }
 
 .bterres_block_title{
@@ -73,18 +67,19 @@
   width: 300px;
   text-align: center;
   padding: 10px 40px 10px 40px;
-  margin: 85px auto 25px auto;
-  border: 3px solid #9F5C1E;
-  color: #9F5C1E;
+  margin: 40px auto 40px auto;
+  border: 3px solid #9EA720;
+  color: #9EA720;
 }
 
-.bterres_block .ng-binding{
-  line-height: 30px;
-  font-size: 18px;
-  text-align: center;
+.bterres_block a:hover{
+  color: #ffffff;
+  background-color: #9EA720;
 }
 
-
+.bg_bterres{
+  background-color: #98C2251A;
+}
 
 @media screen and ( max-width: 768px ) {
   .bterres_header{
@@ -110,6 +105,9 @@
     margin: 0;
   }
 
+  .bterres_bonline a{
+    width: auto;
+  }
 }
 
 

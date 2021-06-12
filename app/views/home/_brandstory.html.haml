@@ -40,6 +40,6 @@
   .row
     .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
       .video-container{:"ng-repeat" => "item in content.brandstory.videos track by $index"}
-        %iframe{allowfullscreen: "", frameborder: "0", height: "100%", "ng-src" => "{{iframe.src | trusted}}", width: "100%"}
+        %iframe{allowfullscreen: "", frameborder: "0", height: "100%", "ng-src" => "{{trustSrc(item.link)}}", width: "100%"}
 
 %script{:src => "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"}

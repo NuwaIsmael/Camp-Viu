@@ -25,17 +25,20 @@
 }
 
 .pmarket_info h2{
-  color: #583311;
+  color: #583311 !important;
   font-size: 60px;
   margin-bottom: 25px;
 }
 
-.pmarket_info h2{
+.pmarket_info p{
+  font-size: 22px;
+  color: #583311;
 }
 
-.parmket_info h2{
-  color: #583311 !important;
+.pmarket_info .carousel{
+  margin-top: 25px;
 }
+
 
 .pmarket_videos{
   padding: 90px 350px 90px 350px;
@@ -45,7 +48,7 @@
 
 .pmarket_videos h2{
   font-size: 60px;
-  margin-bottom: 25px;
+  margin-bottom: 75px;
 }
 
 .pmarket_videos h2{
@@ -90,6 +93,11 @@
   color: #9F5C1E;
 }
 
+.pmarket_producers a:hover{
+  color: #ffffff;
+  background-color: #9F5C1E;
+}
+
 .pmarket_map{
   padding: 92px;
   background-color: #98C2254D;
@@ -113,6 +121,11 @@
   margin: 85px auto 85px auto;
   border: 3px solid #70892B;
   color: #70892B;
+}
+
+.pmarket_map a:hover{
+  background-color: #70892B;
+  color: #ffffff;
 }
 
 .pmarket_map span{
@@ -152,6 +165,11 @@
   border: 3px solid #583311;
   padding: 12px;
   margin-bottom: 6px;
+}
+
+.pmarket_bonline a:hover{
+  color: #ffffff;
+  background-color: #583311;
 }
 
 .pmarket_counter{
@@ -324,9 +342,6 @@
 
 
 @media screen and ( max-width: 1457px ) {
-  .nav-main-menu-social{
-    display: none;
-  }
   .pmarket_bonline p{
     padding: 0px;
   }

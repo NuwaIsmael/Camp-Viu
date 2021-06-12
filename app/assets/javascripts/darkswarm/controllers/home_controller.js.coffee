@@ -1,4 +1,4 @@
-Darkswarm.controller "HomeCtrl", ($scope, $http) ->
+Darkswarm.controller "HomeCtrl", ($scope, $http, $sce) ->
   $scope.brandStoryExpanded = false
 
   $scope.toggleBrandStory = ->
@@ -62,10 +62,9 @@ Darkswarm.controller "HomeCtrl", ($scope, $http) ->
       containerBrandstory.classList.add 'hidden'
       openBrandstory.classList.remove 'hidden'
 
+  $scope.trustSrc = (src) ->
+    $sce.trustAsResourceUrl src
 
-filter 'trusted', ($sce) ->
-  (url) ->
-    $sce.trustAsResourceUrl url
 
 
 # ---

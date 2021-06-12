@@ -57,33 +57,27 @@
   .pmarket_producers
     .row
       %h2 {{content.producers_block.titol}}
-      .small-12.medium-4.columns
-        %h3.pmarket_producers_title {{producers_block_icon1.titol}}
+      .small-12.medium-4.columns{:"ng-repeat" => "item in content.producers_block.icones track by $index"}
+        %h3.pmarket_producers_title {{item.titol}}
         %br/
-        %img{:src => "{{producers_block_icon1.image}}"}
+        %img{:src => "{{item.image}}"}
         %br/
-        %pmarket_producers_description{"ng-bind-html" => "producers_block_icon1.descripcio"}
+        %pmarket_producers_description{"ng-bind-html" => "item.descripcio"}
 
-      .small-12.medium-4.columns
-        %h3.pmarket_producers_title {{producers_block_icon2.titol}}
-        %br/
-        %img{:src => "{{producers_block_icon2.image}}"}
-        %br/
-        %pmarket_producers_description{"ng-bind-html" => "producers_block_icon2.descripcio"}
-      .small-12.medium-4.columns
-        %h3.pmarket_producers_title {{producers_block_icon3.titol}}
-        %br/
-        %img{:src => "{{producers_block_icon3.image}}"}
-        %br/
-        %pmarket_producers_description{"ng-bind-html" => "producers_block_icon3.descripcio"}
-    %a{:href => "#"} {{content.producers_block.button_text}}
+      -# .small-12.medium-4.columns
+      -#   %h3.pmarket_producers_title {{producers_block_icon2.titol}}
+      -#   %br/
+      -#   %img{:src => "{{producers_block_icon2.image}}"}
+      -#   %br/
+      -#   %pmarket_producers_description{"ng-bind-html" => "producers_block_icon2.descripcio"}
+    -#%a{:href => "#"} {{content.producers_block.button_text}}
 
   .pmarket_map
     .row
       %h1 {{content.map_block.titol}}
       %p  {{content.map_block.descripcio}}
       %div#map2
-      %a{:href => "#"} {{content.map_block.button_text}}
+      %a#pmarket_calendar_open2{:href => "#" } {{content.map_block.button_text}}
 
   .pmarket_bonline
     %h2 {{content.shop_online_block.titol}}
@@ -93,9 +87,9 @@
       %img{:height => "68px", :src => "{{content.shop_online_block.imatge}}"}
     .row
       .small-12.medium-6.columns.pmarket_bonline_links
-        %a{:href => "#"} {{shop_online_block_link1.text}}
-        %a{:href => "#"} {{shop_online_block_link2.text}}
-        %a{:href => "#"} {{shop_online_block_link3.text}}
+        %a{:href => "/shops"} {{shop_online_block_link1.text}}
+        %a{:href => "/producers"} {{shop_online_block_link2.text}}
+        %a{:href => "/groups"} {{shop_online_block_link3.text}}
 
   .pmarket_counter
     .row

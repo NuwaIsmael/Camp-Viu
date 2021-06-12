@@ -6,16 +6,17 @@
 
 #panes
 %section.bterres{:"ng-controller" => "BTerresController"}
-  .bterres_header
+  .bterres_header.bg_bterres
     %h1
       %img{:height => "68px", :src => "{{content.header_logo}}"}
       %h1  {{content.header_titol}}
-  .bterres_info
+
+  .bterres_block
     .row
       %h2 {{normal_block_1.titol}}
       %div{"ng-bind-html" => "normal_block_1.text"}
 
-  .bterres_block
+  .bterres_block.bg_bterres
     .row
       %h2 {{content.com_funciona.titol}}
       %div{"ng-bind-html" => "content.com_funciona.contingut"}
@@ -31,10 +32,18 @@
       %div{:"ng-repeat" => "item in content.who_block.who_block_repeater_2 track by $index"}
         {{item.text}}
 
-  .bterres_block
+  .bterres_block.bg_bterres
     .row
       %h2 {{normal_block_2.titol}}
       %div{"ng-bind-html" => "normal_block_2.text"}
+
+  .bterres_block
+    .row
+      %h2 Tipus de contractes
+      %button.contracts_btn{:"ng-repeat" => "item in content.contracts.contracte track by $index"} {{item.titol}}
+      %div{:"ng-repeat" => "item in content.contracts.contracte track by $index", :"id" => "contract{{$index}}"}
+        %h2 {{item.titol}}
+        %div{"ng-bind-html" => "item.text"}
 
   = render "shared/footer"
   #lang= @langvar

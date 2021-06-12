@@ -3,18 +3,15 @@
   padding: 45px;
   text-align: center;
   color: #ffffff !important;
-  background-color: green;
-  background-image: image-url("brecursos/header.png");
+  background-image: image-url("banc_recursos_header.jpeg");
+  background-position: center;
   background-size: cover;
 }
 
 .brecursos_header h1{
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
-.brecursos_header h1, .brecursos_header h2{
   color: #ffffff;
+  text-transform: uppercase;
+  font-size: 60px;
 }
 
 .brecursos_header img{ height: 200px; margin-bottom: 30px;}
@@ -22,31 +19,31 @@
 .brecursos_section_header{
   text-align: center;
   padding: 51px 15px 51px 15px;
-  background-color: #eeeeee;
 }
 
 .brecursos_section_header h2{
+  font-size: 60px;
   color: #F0B72A;
 }
 
 
 .brecursos_block{
-  padding: 92px;
+  padding: 2rem 0 4rem 0;
 }
 
 .brecursos_block h2{
   text-align: center;
-  font-size: 60px;
-  color: #9F5C1E;
-  margin-bottom: 75px;
+  font-size: 48px;
+  color: #4D5A0C;
 }
 
 .brecursos_block p{
   margin-top: 20px;
 }
 
-.brecursos_block_title, .brecursos_block p{
-  color: #583311;
+.brecursos_block p{
+  color: #3B3B3B;
+  font-size: 22px;
 }
 
 .brecursos_block_title{
@@ -62,14 +59,18 @@
   width: 300px;
   text-align: center;
   padding: 10px 40px 10px 40px;
-  margin: 85px auto 85px auto;
-  border: 3px solid #9F5C1E;
-  color: #9F5C1E;
+  margin: 40px auto 40px auto;
+  border: 3px solid #F0B72A;
+  color: #F0B72A;
 }
 
 .brecursos_block a:hover{
   color: #ffffff;
-  background-color: #9F5C1E;
+  background-color: #F0B72A;
+}
+
+#eines, #mediateca{
+  background-color: #eeeeee;
 }
 
 
