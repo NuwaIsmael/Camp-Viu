@@ -42,18 +42,15 @@
   margin-left: 5px;
 }
 
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
 .accordion-panel{
-    padding: 0 18px;
+    padding: 18px;
     color: #583311;
     background-color: #98C2251A;
 }
 
 .accordion-panel p{
-  font-size: 25px;
+  font-size: 18px;
+  margin-bottom: 0px;
 }
 
 .accordion button:focus, .accordion button:hover{

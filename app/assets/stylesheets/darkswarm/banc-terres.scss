@@ -41,7 +41,7 @@
 
 .bterres_block h2{
   text-align: center;
-  font-size: 48px;
+  font-size: 36px;
   color: #4D5A0C;
 }
 
@@ -78,6 +78,20 @@
 }
 
 .bg_bterres{
+  background-color: #98C2251A;
+}
+
+.contracts_btn{
+  background-color: #98C2251A;
+  color: #000000;
+  margin:15px;
+}
+
+.contracts_btn:hover{
+  background-color: #4D5A0C;
+}
+
+.contraxcts_btn:focus{
   background-color: #98C2251A;
 }
 
