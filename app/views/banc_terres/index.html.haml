@@ -1,9 +1,6 @@
 :css
   #tagline:before { background-image: url("#{ContentConfig.home_hero.url}") }
 
-
-
-
 #panes
 %section.bterres{:"ng-controller" => "BTerresController"}
   .bterres_header.bg_bterres
@@ -40,8 +37,8 @@
   .bterres_block
     .row
       %h2 Tipus de contractes
-      %button.contracts_btn{:"ng-repeat" => "item in content.contracts.contracte track by $index"} {{item.titol}}
-      %div{:"ng-repeat" => "item in content.contracts.contracte track by $index", :"id" => "contract{{$index}}"}
+      %button.contracts_btn{:"ng-repeat" => "item in content.contracts.contracte track by $index", :"id" => "contract{{$index}}_btn"} {{item.titol}}
+      %div.hidden{:"ng-repeat" => "item in content.contracts.contracte track by $index", :"id" => "contract{{$index}}_container"}
         %h2 {{item.titol}}
         %div{"ng-bind-html" => "item.text"}
 

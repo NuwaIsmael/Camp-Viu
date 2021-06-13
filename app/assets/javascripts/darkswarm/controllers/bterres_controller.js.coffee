@@ -1,25 +1,29 @@
 Darkswarm.controller "BTerresController", ($scope, $http, $log) ->
 
-  console.log 'JS Loaded'
 
+  btnarray = []
+  carray = []
   x = document.getElementById('lang').textContent
   $http.get('https://www.distracted-driscoll.135-125-232-65.plesk.page/wp-json/wp/v2/pages/213').success (content) ->
     $scope.content = content.acf["ca"]
     #Carreguem la informació de cada block a les variables per ser utilitzades posteriorment.
-
     array = Object.values($scope.content.normal_block)
     $scope.normal_block_1 = JSON.parse(JSON.stringify(array[0]))
     $scope.normal_block_2 = JSON.parse(JSON.stringify(array[1]))
-    #
-    # array = Object.values($scope.content.producers_block.icones)
-    # $scope.producers_block_icon1 = JSON.parse(JSON.stringify(array[0]))
-    # $scope.producers_block_icon2 = JSON.parse(JSON.stringify(array[1]))
-    # $scope.producers_block_icon3 = JSON.parse(JSON.stringify(array[2]))
-    #
-    # array = Object.values($scope.content.shop_online_block.enllac)
-    # $scope.shop_online_block_link1 = JSON.parse(JSON.stringify(array[0]))
-    # $scope.shop_online_block_link2 = JSON.parse(JSON.stringify(array[1]))
-    # $scope.shop_online_block_link3 = JSON.parse(JSON.stringify(array[2]))
+    window.onload = ->
+      contractes = $scope.content.contracts
+      value = Object.keys(contractes.contracte).length
+      i = 0
+      while i < value
+        btnstr = "contract" + i + "_btn"
+        containerstr = "contract" + i + "_container"
+        btnarray[i] = document.getElementById(btnstr)
+        carray[i] = document.getElementById(containerstr)
+        val = i
+        addClickHandler btnarray[i], carray[i]
+        i++
 
-
-  console.log 'JS Loaded'
+  addClickHandler = (button, div) ->
+    button.addEventListener 'click', ->
+      div.classList.toggle 'hidden'
+      div.classList.toggle 'active'

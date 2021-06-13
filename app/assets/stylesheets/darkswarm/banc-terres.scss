@@ -87,12 +87,8 @@
   margin:15px;
 }
 
-.contracts_btn:hover{
+button.contracts_btn:hover:hover, button.contracts_btn:hover:focus, .contracts_btn:hover:hover, .contracts_btn:hover:focus{
   background-color: #4D5A0C;
-}
-
-.contraxcts_btn:focus{
-  background-color: #98C2251A;
 }
 
 @media screen and ( max-width: 768px ) {
