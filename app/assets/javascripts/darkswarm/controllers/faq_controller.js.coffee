@@ -1,6 +1,5 @@
-module = angular.module("demo", ['ui.gravatar'])
-
 Darkswarm.controller "FaqController", ($scope, $http, $log) ->
+  console.log 'JS Loaded'
   x = document.getElementById('lang').textContent
   $http.get('https://www.distracted-driscoll.135-125-232-65.plesk.page/wp-json/wp/v2/pages/8').success (posts) ->
     console.log posts
@@ -12,6 +11,7 @@ Darkswarm.controller "FaqController", ($scope, $http, $log) ->
     i = 0
     while i < acc.length
       acc[i].addEventListener 'click', ->
+        console.log "Ha fet click a " + acc[i]
         ### Toggle between adding and removing the "active" class,
         to highlight the button that controls the panel
         ###

@@ -1255,7 +1255,7 @@ ca:
       mobile_menu:
         cart: "Cistella"
     register_call:
-      selling_on_ofn: "Estàs interessat en formar part d'Campviu?"
+      selling_on_ofn: "Ets productora o tens un grup de consum i estàs interessat en formar part de Campviu?"
       register: "Registra't aquí"
     footer:
       footer_secure: "Segur i de confiança."

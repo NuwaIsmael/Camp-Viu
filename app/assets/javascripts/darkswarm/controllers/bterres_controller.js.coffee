@@ -1,5 +1,6 @@
 Darkswarm.controller "BTerresController", ($scope, $http, $log) ->
-
+  
+  console.log 'JS Loaded'
 
   btnarray = []
   carray = []
