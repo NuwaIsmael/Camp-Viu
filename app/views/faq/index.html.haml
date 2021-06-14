@@ -9,9 +9,10 @@
     %h1
       = t :faq_title
     %accordion-container{:"ng-repeat" => "item in posts track by $index"}
-      %button.accordion {{item.pregunta}}
+      %button.accordion{:"ng-click" => "triggerAccordion()"} {{item.pregunta}}
       .accordion-panel.hidden
         %p {{item.resposta}}
+
 
 = render "shared/footer"
 #lang= @langvar
