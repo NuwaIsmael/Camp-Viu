@@ -38,9 +38,9 @@
 
     %div
       .nav-main-menu-social
-        %a{href: "https://instagram.com"}
+        %a{href: ContentConfig.footer_instagram_url}
           =image_tag  "footer/icona-instagram.svg", :width => "20px"
-        %a{href: "https://facebook.com"}
+        %a{href: ContentConfig.footer_facebook_url}
           =image_tag  "footer/icona-facebook.svg", :width => "20px"
       %ul.nav-icons-menu
         - if OpenFoodNetwork::I18nConfig.selectable_locales.count > 1

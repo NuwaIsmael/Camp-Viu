@@ -35,24 +35,15 @@
       %h2 {{normal_block_1.titol}}
       %p
         {{normal_block_1.descripcio}}
-    .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
-      .image-container
-        %img{:src => "https://dummyimage.com/hd1080"}
-      .image-container
-        %img{:src => "https://dummyimage.com/hd1080"}
-      .image-container
-        %img{:src => "https://dummyimage.com/hd1080"}
+      .image-container{:"ng-repeat" => "item in content.header_block.imatges track by $index"}
+        %img{:src => "{{item.imatge}}"}
 
   .pmarket_videos
     .row
       %h2 {{normal_block_2.titol}}
     .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
       .video-container
-        %iframe{allowfullscreen: "", frameborder: "0", height: "100%", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "100%"}
-      .video-container
-        %iframe{allowfullscreen: "", frameborder: "0", height: "100%", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "100%"}
-      .video-container
-        %iframe{allowfullscreen: "", frameborder: "0", height: "100%", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "100%"}
+        %iframe{allowfullscreen: "", frameborder: "0", height: "100%", "ng-src" => "{{trustSrc(content.header_block.video)}}", width: "100%"}
 
   .pmarket_producers
     .row

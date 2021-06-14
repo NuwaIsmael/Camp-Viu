@@ -1,5 +1,4 @@
 .faq_page{
-  padding: 200px;
   padding: 50px 100px 100px 100px;
 }
 
@@ -63,3 +62,9 @@
 }
 
 .hidden{ display: none; }
+
+@media screen and ( max-width: 768px ) {
+  .faq_page{
+    padding: 15px;
+  }
+}

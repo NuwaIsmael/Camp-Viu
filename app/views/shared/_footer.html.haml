@@ -4,7 +4,7 @@
 
     .row.align-center.footer_nav
       .columns.small-2.p-14
-        %a.footer_nav_icon{href: ContentConfig.footer_twitter_url}
+        %a.footer_nav_icon{href: ContentConfig.footer_facebook_url}
           =image_tag  "footer/icona-instagram.svg", :width => "20"
         %a.footer_nav_icon{href: ContentConfig.footer_instagram_url}
           =image_tag  "footer/icona-facebook.svg", :width => "20"
@@ -19,9 +19,9 @@
           %li
             %a{:href => "/banc-recursos"}
               = t 'link2'
-          %li
-            %a{:href => "/agenda"}
-              = t 'link4'
+          -# %li
+          -#   %a{:href => "/agenda"}
+          -#     = t 'link4'
           %li
             %a{:href => "/faq"}
               = t 'link5'
@@ -44,7 +44,7 @@
 
       .small-12.medium-6.columns.text-left
         %a{href: main_app.root_path}
-          %img{src: ContentConfig.footer_logo.url, width: "220"}
+          %img{src: "/default_images/ofn-logo-footer.png", width: "220"}
         %p.text-small Campviu està desenvolupat amb la tecnologia d'Open Food Network, una plataforma de programari lliure i de codi obert. El seu contingut està llicenciat amb CC BY-SA 3.0 i el codi amb AGPL 3.
 
 

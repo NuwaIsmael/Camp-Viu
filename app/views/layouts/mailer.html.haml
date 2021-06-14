@@ -15,7 +15,7 @@
             %table{:bgcolor => "#f2f2f2"}
               %tr
                 %td
-                  %img{src: ContentConfig.footer_logo.url, width: "144", height: "50"}/
+                  %img{src: ContentConfig.footer_logo.url, width: "238", height: "50"}/
                 %td{:align => "right"}
                   %h6.collapse
                     = Spree::Config[:site_name]
@@ -31,21 +31,21 @@
                 %td
 
                   = yield
-        %td
+        -# %td
 
-    %table.footer-wrap
-      %tr
-        %td
-        %td.container
-          .content
-            %table
-              %tr
-                %td{:align => "center"}
-                  %p
-                    %a{:href => "#{ URI.join(main_app.root_url, Spree::Config.footer_tos_url).to_s }", :target => "_blank"}
-                      = t :terms_of_service
-                    |
-                    %a{:href => "#{ main_app.root_url }"}
-                      = Spree::Config[:site_name]
-                    / | <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>
-        %td
+    -# %table.footer-wrap
+    -#   %tr
+    -#     %td
+    -#     %td.container
+    -#       .content
+    -#         %table
+    -#           %tr
+    -#             %td{:align => "center"}
+    -#               %p
+    -#                 %a{:href => "#{ URI.join(main_app.root_url, Spree::Config.footer_tos_url).to_s }", :target => "_blank"}
+    -#                   = t :terms_of_service
+    -#                 |
+    -#                 %a{:href => "#{ main_app.root_url }"}
+    -#                   = Spree::Config[:site_name]
+    -#                 / | <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>
+    -#     %td

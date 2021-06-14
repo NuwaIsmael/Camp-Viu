@@ -1,4 +1,4 @@
-Darkswarm.controller "PMarketController", ($scope, $http, $log) ->
+Darkswarm.controller "PMarketController", ($scope, $http, $log, $sce) ->
 
   console.log 'JS Loaded'
 
@@ -54,5 +54,5 @@ Darkswarm.controller "PMarketController", ($scope, $http, $log) ->
 
       marker.setMap(map2);
 
-
-  console.log 'JS Loaded'
+  $scope.trustSrc = (src) ->
+    $sce.trustAsResourceUrl src

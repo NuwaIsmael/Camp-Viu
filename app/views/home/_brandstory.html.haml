@@ -38,13 +38,12 @@
       = t :brandstory_hide
 
   .row
-    .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
-      .video-container
-        %iframe{allowfullscreen: "", frameborder: "0", height: "100%", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "100%"}
-      .video-container
-        %iframe{allowfullscreen: "", frameborder: "0", height: "100%", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "100%"}
-      .video-container
-        %iframe{allowfullscreen: "", frameborder: "0", height: "100%", src: "https://www.youtube.com/embed/WUgvvPRH7Oc", width: "100%"}
+    .video-container
+      %iframe{allowfullscreen: "", frameborder: "0", height: "100%", "ng-src" => "{{trustSrc(content.brandstory.video)}}", width: "100%"}
+    -#     %iframe{allowfullscreen: "", frameborder: "0", height: "100%", "ng-src" => "{{trustSrc(item.link)}}", width: "100%"}
+    -# .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
+    -#   .video-container{:"ng-repeat" => "item in content.brandstory.videos track by $index"}
+    -#     %iframe{allowfullscreen: "", frameborder: "0", height: "100%", ngsrc: "{{trustSrc(item.link)}}", width: "100%"}
     -# .carousel{"data-flickity" => "{ \"cellAlign\": \"center\", \"pageDots\": false, \"freeScroll\": false, \"contain\": false, \"prevNextButtons\": true}"}
     -#   .video-container{:"ng-repeat" => "item in content.brandstory.videos track by $index"}
     -#     %iframe{allowfullscreen: "", frameborder: "0", height: "100%", "ng-src" => "{{trustSrc(item.link)}}", width: "100%"}

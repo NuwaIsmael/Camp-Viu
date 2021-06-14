@@ -38,9 +38,10 @@
 
 .brecursos_block p{
   color: #3B3B3B;
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 20px;
   font-weight: 100;
+  text-align: justify;
 }
 
 .brecursos_block_title{
@@ -86,14 +87,13 @@
   }
   .brecursos_block a{
     width: auto;
+    margin-bottom: 0.5rem;
   }
   .brecursos_map{
     padding: 45px 0px 0px 0px;
   }
 
-  .brecursos_block a{
-    margin: 0;
-  }
+
 
   .brecursos_bonline a{
     width: auto;
