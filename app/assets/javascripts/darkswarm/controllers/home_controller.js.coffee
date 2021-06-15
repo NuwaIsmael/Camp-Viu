@@ -49,18 +49,10 @@ Darkswarm.controller "HomeCtrl", ($scope, $http, $sce) ->
     $scope.stats5 = JSON.parse(JSON.stringify(array[4]))
 
 
-
     openBrandstory = document.getElementById('brandstory_expand')
-    closeBrandstory = document.getElementById('brandstory_expand_hide')
-    containerBrandstory = document.getElementById('brandstory_expand_container')
-
     openBrandstory.addEventListener 'click', ->
-      openBrandstory.classList.add 'hidden'
-      containerBrandstory.classList.remove 'hidden'
+      $('#brandstory_expand_container').toggle('hidden')
 
-    closeBrandstory.addEventListener 'click', ->
-      containerBrandstory.classList.add 'hidden'
-      openBrandstory.classList.remove 'hidden'
 
   $scope.trustSrc = (src) ->
     $sce.trustAsResourceUrl src

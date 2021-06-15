@@ -26,16 +26,15 @@ Darkswarm.controller "PMarketController", ($scope, $http, $log, $sce) ->
     openCalendarBtn = document.getElementById('pmarket_calendar_open')
     openCalendarBtn2 = document.getElementById('pmarket_calendar_open2')
     closeCalendarBtn = document.getElementById('pmarket_calendar_close')
-    calendar = document.getElementById('pmarket_calendar')
 
     closeCalendarBtn.addEventListener 'click', ->
-      calendar.classList.add 'hidden'
+      $('#pmarket_calendar').toggle('hidden')
 
     openCalendarBtn.addEventListener 'click', ->
-        calendar.classList.remove 'hidden'
+      $('#pmarket_calendar').toggle('hidden')
 
     openCalendarBtn2.addEventListener 'click', ->
-        calendar.classList.remove 'hidden'
+      $('#pmarket_calendar').toggle('hidden')
 
     map2 = undefined
 
