@@ -27,11 +27,9 @@
   color: #9EA720;
 }
 
-.bterres_block{
-}
 
-.bterres_block, .bterres_block p {
-  padding: 2rem 0 4rem 0;
+.bterres_block {
+  padding: 4rem 0 2rem 0;
   color: #3B3B3B;
 }
 
@@ -43,6 +41,7 @@
   text-align: center;
   font-size: 36px;
   color: #4D5A0C;
+  padding-bottom: 2rem;
 }
 
 .bterres_block p{
@@ -84,9 +83,19 @@
   background-color: #98C2251A;
   color: #000000;
   margin:15px;
+  text-transform: uppercase;
 }
 
-button.contracts_btn:hover:hover, button.contracts_btn:hover:focus, .contracts_btn:hover:hover, .contracts_btn:hover:focus{
+.bterres_block.contractes {
+  text-align: center;
+
+  & h3 {
+    margin-top: 3rem;
+    color:#4D5A0C;
+  }
+}
+
+button.contracts_btn:hover, button.contracts_btn:focus{
   background-color: #4D5A0C;
 }
 

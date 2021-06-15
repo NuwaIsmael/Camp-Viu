@@ -8,11 +8,28 @@
   .row
     %h1
       = t :faq_title
+  .row
+    %h2
+      ="Mercat de la pagesia"
+    %accordion-container{:"ng-repeat" => "item in posts_mdp track by $index"}
+      %button.accordion{:"ng-click" => "triggerAccordion()"} {{item.pregunta}}
+      .accordion-panel.hidden
+        %p {{item.resposta}}
+  .row
+    %h2
+      ="Banc de Terres"
     %accordion-container{:"ng-repeat" => "item in posts track by $index"}
       %button.accordion{:"ng-click" => "triggerAccordion()"} {{item.pregunta}}
       .accordion-panel.hidden
         %p {{item.resposta}}
 
+  .row
+    %h2
+      ="Banc de Recursos"
+    %accordion-container{:"ng-repeat" => "item in posts_bdr track by $index"}
+      %button.accordion{:"ng-click" => "triggerAccordion()"} {{item.pregunta}}
+      .accordion-panel.hidden
+        %p {{item.resposta}}
 
 = render "shared/footer"
 #lang= @langvar

@@ -18,7 +18,7 @@
       %h2 {{content.com_funciona.titol}}
       %div{"ng-bind-html" => "content.com_funciona.contingut"}
       %a{:href => "{{content.com_funciona.link_url}}"} {{content.com_funciona.link_text}}
-      %p {{content.com_funciona.link_description}}
+      %p.text-center {{content.com_funciona.link_description}}
 
   .bterres_block
     .row
@@ -34,16 +34,14 @@
       %h2 {{normal_block_2.titol}}
       %div{"ng-bind-html" => "normal_block_2.text"}
 
-  .bterres_block
+  .bterres_block.contractes
     .row
       %h2 Tipus de contractes
       %button.contracts_btn{:"ng-repeat" => "item in content.contracts.contracte track by $index", :"data-contract" => "{{$index}}", :"ng-click" => "toggleBTContract()", :"id" => "contract{{$index}}_btn"}
         {{item.titol}}
       %div.hidden{:"ng-repeat" => "item in content.contracts.contracte track by $index", :"id" => "contract{{$index}}_container"}
-        %h2 {{item.titol}}
+        %h3 {{item.titol}}
         %div{"ng-bind-html" => "item.text"}
 
   = render "shared/footer"
   #lang= @langvar
-
-%script{:src => "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"}
