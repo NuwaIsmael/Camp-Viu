@@ -1255,8 +1255,8 @@ ca:
       mobile_menu:
         cart: "Cistella"
     register_call:
-      selling_on_ofn: "Ets productora o tens un grup de consum i estàs interessat en formar part de Campviu?"
-      register: "Registra't aquí"
+      selling_on_ofn: "Ets una productora o tens un grup de consum?"
+      register: "Crea un perfil avançat"
     footer:
       footer_secure: "Segur i de confiança."
       footer_secure_text: "Campviu utilitza el xifrat SSL (RSA de 2048 bits) a tot arreu per mantenir les vostres dades comercials i de pagament privades. Els nostres servidors no emmagatzemen els detalls de la targeta de crèdit i els pagaments es processen mitjançant serveis compatibles amb PCI."

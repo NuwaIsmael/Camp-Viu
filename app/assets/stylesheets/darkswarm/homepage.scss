@@ -51,14 +51,13 @@
 }
 
 #brandstory_expand_container h2{
-  font-size: 60px;
+  font-size: 42px !important;
   color: #9EA720;
 }
 
 #brandstory_expand_container p{
   font-size: 25px;
   color: #3B3B3B;
-  margin-bottom: 100px;
 }
 
 .brandstory_button{
@@ -116,7 +115,6 @@
 
 .home_block_header h2{
   line-height: initial;
-  margin-top: 2rem;
   font-size: 30px;
   color: #FFFFFF;
   font-weight: bold;
@@ -124,7 +122,7 @@
 
 .home_block_body{
   background-color: #98C2251A;
-  padding: 130px 25px 100px;
+  padding: 80px 25px 100px;
 }
 
 .home_block_body a{
@@ -135,7 +133,7 @@
 }
 
 .home_block_header img{
-  height: 200px;
+  height: 150px;
   width: auto;
 }
 
@@ -242,6 +240,17 @@
   border: 0;
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+.bg_home_rbinfo_body .home-icon-box-bottom p {
+  min-height: 100px;
+}
+
+.bg_home_rbinfo_body .home-icon-box-bottom a.shortlink {
+  margin:0 !important;
+  &:hover, &:active {
+    color:#4D5A0C !important;
+  }
 }
 
 .bg_home_rbinfo_body .home-icon-box-bottom a:hover{

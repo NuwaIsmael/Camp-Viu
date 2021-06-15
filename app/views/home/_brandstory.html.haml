@@ -9,33 +9,33 @@
           %img{:height => "68px", :src => "{{brandstory_icons_1.icona}}"}
         .home-icon-box-bottom
           %h4 {{ brandstory_icons_1.titol }}
-          %a.text-normal{:href => "#"} {{ brandstory_icons_1.text_link }}
+          %a.text-normal{:href => "mercat-pagesia"} {{ brandstory_icons_1.text_link }}
       .small-12.medium-4.columns
         .home-icon-box
           %img{:height => "68px", :src => "{{brandstory_icons_2.icona}}"}
         .home-icon-box-bottom
           %h4 {{ brandstory_icons_2.titol }}
-          %a.text-normal{:href => "#"} {{ brandstory_icons_2.text_link }}
+          %a.text-normal{:href => "banc-terres"} {{ brandstory_icons_2.text_link }}
       .small-12.medium-4.columns
         .home-icon-box
           %img{:height => "68px", :src => "{{brandstory_icons_3.icona}}"}
         .home-icon-box-bottom
           %h4 {{ brandstory_icons_3.titol }}
-          %a.text-normal{:href => "#"} {{ brandstory_icons_3.text_link }}
+          %a.text-normal{:href => "banc-recursos"} {{ brandstory_icons_3.text_link }}
 
       .small-12.medium-12.columns
         %a.brandstory_button#brandstory_expand{:href => "#"}
           = t :header_block_link_text
 
-  .text-center#brandstory_expand_container.hidden
+  .text-center.brand-story-header#brandstory_expand_container.hidden
     %h2 {{content.brandstory.expand1.titol}}
     %p  {{content.brandstory.expand1.p1}}
     %p  {{content.brandstory.expand1.p2}}
     %br/
     %h2 {{content.brandstory.expand2.titol}}
     %p  {{content.brandstory.expand2.p1}}
-    %a.brandstory_button#brandstory_expand_hide{:href => "#"}
-      = t :brandstory_hide
+    -# %a.brandstory_button#brandstory_expand_hide{:href => "#"}
+    -#   = t :brandstory_hide
 
   .row
     .video-container
