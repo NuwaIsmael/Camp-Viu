@@ -363,6 +363,8 @@ ul#map-submenu {
       float:none;
       & a {
         text-transform: uppercase;
+        white-space: nowrap;
+        font-size:14px;
       }
     }
 }
