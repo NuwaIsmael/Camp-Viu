@@ -339,3 +339,30 @@ nav.top-bar {
 .top-bar-section ul li:hover:not(.has-form) > a{
   background-color: #4D5A0C;
 }
+
+li#nav-mapes {
+  position: relative;
+  &:hover ul#map-submenu  {
+    visibility: visible;
+  }
+}
+
+ul#map-submenu {
+    visibility: hidden;
+    position: absolute;
+    top: 66px;
+    display: block;
+    background-color: #9F5C1E;
+    min-width: 200px;
+    width: fit-content;
+    padding: 0.5rem;
+    text-align: left;
+    left: -10px;
+
+    & li {
+      float:none;
+      & a {
+        text-transform: uppercase;
+      }
+    }
+}

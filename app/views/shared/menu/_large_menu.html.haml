@@ -31,10 +31,18 @@
         %a{href: "/faq"}
           %span.nav-primary
             = t 'link5'
-      %li
-        %a{href: "/map"}
+      %li#nav-mapes
+        %a{href: "#"}
           %span.nav-primary
             = t 'link6'
+        %ul#map-submenu
+          %li
+            %a{href: "/map"}
+              = t 'link6_1'
+          %li
+            %a{href: "/mercat-pagesia#map"}
+              = t 'link6_2'
+
 
     %div
       .nav-main-menu-social
