@@ -1,4 +1,5 @@
-%li#login-link
-  %a{"auth" => "login"}
-    %span
-      = t 'label_login'
+- if controller.controller_name != 'home' && controller.controller_name != 'banc_terres' && controller.controller_name != 'banc_recursos'
+  %li#login-link
+    %a{"auth" => "login"}
+      %span
+        = t 'label_login'
