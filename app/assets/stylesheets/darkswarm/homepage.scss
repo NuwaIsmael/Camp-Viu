@@ -15,18 +15,21 @@
 }
 
 .header_learn_bg1{
-  background-image: image-url("home/header1.png");
+  background-image: image-url("home/header3.jpeg");
   background-size: cover;
+  background-position: center center;
 }
 
 .header_learn_bg2{
   background-image: image-url("home/header2.png");
   background-size: cover;
+  background-position: center center;
 }
 
 .header_learn_bg3{
-  background-image: image-url("home/header3.jpeg");
+  background-image: image-url("home/header1.png");
   background-size: cover;
+  background-position: center center;
 }
 
 .header_learn_button{
@@ -276,6 +279,9 @@
 
 .bg_home_fminfo_header{
   background-color: #F08823;
+  & img {
+    height:200px;
+  }
 }
 
 .bg_home_fminfo_body{
