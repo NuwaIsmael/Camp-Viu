@@ -15,6 +15,8 @@
 %p &nbsp;
 %p.lead
   = t :email_signup_text
+%p.lead
+  = t :email_signup_text2, register: link_to(main_app.root_url.sub(/http:\/\//,"").sub(/\/$/,""), main_app.root_url+"/register", target: '_blank')
 %p
   = t :email_signup_help_html, email: mail_to(ContentConfig.footer_email)
 
