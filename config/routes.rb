@@ -18,6 +18,7 @@ Openfoodnetwork::Application.routes.draw do
   resources "mercat-pagesia", :controller => :mercat_pagesia, :as => :mercat_pagesia
   resources "banc-recursos", :controller => :banc_recursos, :as => :banc_recursos
   resources "banc-terres", :controller => :banc_terres, :as => :banc_terres
+  resources "tutorials", :controller => :tutorials, :as => :tutorials
 
   get "/map", to: "map#index", as: :map
   get "/sell", to: "home#sell", as: :sell

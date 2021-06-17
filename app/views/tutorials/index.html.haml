@@ -1,0 +1,12 @@
+
+#panes
+%section.bterres{:"ng-controller" => "TutorialsController"}
+
+  .bterres_block
+    %h1.text-center  {{title.rendered}}
+    .row
+      %div{"ng-bind-html" => "content.rendered"}
+
+
+  = render "shared/footer"
+  #lang= @langvar

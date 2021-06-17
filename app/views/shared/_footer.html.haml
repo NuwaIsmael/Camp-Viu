@@ -26,9 +26,14 @@
             %a{:href => "/faq"}
               = t 'link5'
           %li
+            %a{href: "/tutorials"}
+              = t 'link7'
+          %li
             %a{:href => "/map"}
-              = t 'link6'
-
+              = t 'link6_1'
+          %li
+            %a{:href => "/mercat-pagesia#map"}
+              = t 'link6_2'
 
     .row.legal
       .small-12.medium-6.columns.text-left
@@ -71,6 +76,6 @@
       .small-12.medium-4.columns
       =image_tag  "footer/logo-soc.png", :width => "140"
   .footer-legal
-    %a{href: main_app.root_path} Avis legal
-    %a{href: main_app.root_path} Política de privacitat
-    %a{href: main_app.root_path} Política de cookies
+    -# %a{href: main_app.root_path} Avis legal
+    -# %a{href: main_app.root_path} Política de privacitat
+    -# %a{href: main_app.root_path} Política de cookies
