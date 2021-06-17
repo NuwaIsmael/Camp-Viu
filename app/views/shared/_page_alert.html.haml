@@ -1,6 +1,11 @@
 - if ContentConfig.home_page_alert_html.present?
-  .alert-cta
-    %h6= raw ContentConfig.home_page_alert_html
+  .alert-box
+    .alert-cta
+      %h6= raw ContentConfig.home_page_alert_html
+    %a.close{ ng: { click: "close()" } } &times;
 
 - else
-  = render "shared/register_call"
+  - if controller.controller_name != 'home' && controller.controller_name != 'banc_terres' && controller.controller_name != 'banc_recursos' && controller.controller_name != 'tutorials'
+    .alert-box
+      = render "shared/register_call"
+      %a.close{ ng: { click: "close()" } } &times;

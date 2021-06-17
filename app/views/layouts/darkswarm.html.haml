@@ -23,6 +23,9 @@
       = render partial: "shared/ie_warning"
       = javascript_include_tag "iehack"
 
+    - content_for :page_alert do
+      = render "shared/menu/alert"
+
     = render "layouts/shopfront_script" if @shopfront_layout
 
     .off-canvas-wrap{ offcanvas: true }
