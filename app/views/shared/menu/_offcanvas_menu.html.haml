@@ -44,6 +44,7 @@
                 %a{href: "?locale=#{l.to_s}" }= t('language_name', locale: l)
     %li
     - if spree_current_user.nil?
-      = render 'shared/menu/signed_out'
+      - if controller.controller_name != 'home' && controller.controller_name != 'banc_terres' && controller.controller_name != 'banc_recursos' && controller.controller_name != 'tutorials'
+        = render 'shared/menu/signed_out'
     - else
       = render 'shared/menu/signed_in_offcanvas'
