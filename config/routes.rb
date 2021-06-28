@@ -15,6 +15,7 @@ Openfoodnetwork::Application.routes.draw do
   get "/discourse/sso", to: "discourse_sso#sso"
 
   resources :faq
+  resources :legal
   resources "mercat-pagesia", :controller => :mercat_pagesia, :as => :mercat_pagesia
   resources "banc-recursos", :controller => :banc_recursos, :as => :banc_recursos
   resources "banc-terres", :controller => :banc_terres, :as => :banc_terres

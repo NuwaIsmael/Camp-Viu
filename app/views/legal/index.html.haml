@@ -1,0 +1,12 @@
+
+#panes
+%section.legal{:"ng-controller" => "LegalController"}
+
+  .bterres_block.legal_container
+    %h1.text-center  {{title.rendered}}
+    .row
+      %div{"ng-bind-html" => "content.rendered"}
+
+
+  = render "shared/footer"
+  #lang= @langvar

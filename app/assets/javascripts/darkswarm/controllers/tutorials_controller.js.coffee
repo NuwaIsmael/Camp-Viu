@@ -10,5 +10,3 @@ Darkswarm.controller "TutorialsController", ($scope, $http, $log) ->
     $scope.title = content.title
     $scope.content = content.content
     # $scope.normal_block_2 = JSON.parse(JSON.stringify(array[1]))
-
-    console.log JSON.parse(JSON.stringify(content))

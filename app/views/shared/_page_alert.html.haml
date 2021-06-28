@@ -5,7 +5,7 @@
     %a.close{ ng: { click: "close()" } } &times;
 
 - else
-  - if controller.controller_name != 'home' && controller.controller_name != 'banc_terres' && controller.controller_name != 'banc_recursos' && controller.controller_name != 'tutorials'
+  - if controller.controller_name != 'home' && controller.controller_name != 'banc_terres' && controller.controller_name != 'banc_recursos' && controller.controller_name != 'tutorials' && controller.controller_name != 'legal'
     .alert-box
       = render "shared/register_call"
       %a.close{ ng: { click: "close()" } } &times;
