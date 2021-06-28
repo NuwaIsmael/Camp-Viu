@@ -15,6 +15,42 @@
     %img{:height => "68px", :src => "{{content.header_logo}}"}
     %h1  {{content.header_titol}}
 
+  .home_block_body.bg_home_rbinfo_body.text-center
+    .row
+      %h3 {{home_block_3.titol}}
+    .row
+      .small-12.medium-3.columns
+        .home-icon-box
+          %img{:style => "68px", :src => "{{home_block_3_icon1.icona}}"}
+        .home-icon-box-bottom
+          %h4 {{home_block_3_icon1.titol}}
+          %p.text-normal {{home_block_3_icon1.claim}}
+          %a.shortlink{:href => "/banc-recursos#eines"} Més informació
+
+      .small-12.medium-3.columns
+        .home-icon-box
+          %img{:height => "68px", :src => "{{home_block_3_icon2.icona}}"}
+        .home-icon-box-bottom
+          %h4 {{home_block_3_icon2.titol}}
+          %p.text-normal {{home_block_3_icon2.claim}}
+          %a.shortlink{:href => "/banc-recursos#temps"} Més informació
+
+      .small-12.medium-3.columns
+        .home-icon-box
+          %img{:height => "68px", :src => "{{home_block_3_icon3.icona}}"}
+        .home-icon-box-bottom
+          %h4 {{home_block_3_icon3.titol}}
+          %p.text-normal {{home_block_3_icon3.claim}}
+          %a.shortlink{:href => "/banc-recursos#mediateca"} Més informació
+
+      .small-12.medium-3.columns
+        .home-icon-box
+          %img{:height => "68px", :src => "{{home_block_3_icon4.icona}}"}
+        .home-icon-box-bottom
+          %h4 {{home_block_3_icon4.titol}}
+          %p.text-normal {{home_block_3_icon4.claim}}
+          %a.shortlink{:href => "/banc-recursos#central-provisions"} Més informació
+          
   %section{:id => "eines"}
     .brecursos_section_header
       %img{:height => "68px", :src => "{{content.banc_eines.logo}}"}
