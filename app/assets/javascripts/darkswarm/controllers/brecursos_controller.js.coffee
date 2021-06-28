@@ -7,9 +7,6 @@ Darkswarm.controller "BRecursosController", ($scope, $http, $log) ->
     $scope.content = content.acf["ca"]
     #Carreguem la informació de cada block a les variables per ser utilitzades posteriorment.
 
-    array = Object.values($scope.content.normal_block)
-    $scope.normal_block_1 = JSON.parse(JSON.stringify(array[0]))
-    $scope.normal_block_2 = JSON.parse(JSON.stringify(array[1]))
 
   $http.get('https://www.distracted-driscoll.135-125-232-65.plesk.page/wp-json/wp/v2/pages/5').success (content2) ->
     $scope.content2 = content2.acf["ca"]
@@ -32,6 +29,3 @@ Darkswarm.controller "BRecursosController", ($scope, $http, $log) ->
   # $scope.shop_online_block_link1 = JSON.parse(JSON.stringify(array[0]))
   # $scope.shop_online_block_link2 = JSON.parse(JSON.stringify(array[1]))
   # $scope.shop_online_block_link3 = JSON.parse(JSON.stringify(array[2]))
-
-
-  console.log 'JS Loaded'
