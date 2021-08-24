@@ -24,7 +24,7 @@ class AddressGeocoder
   def address_parts
     [
       address.address1,
-      address.city,
+      address.city
     ]
   end
 end
