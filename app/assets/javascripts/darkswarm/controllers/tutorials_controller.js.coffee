@@ -1,7 +1,7 @@
 Darkswarm.controller "TutorialsController", ($scope, $http, $log) ->
 
   x = document.getElementById('lang').textContent
-  $http.get('https://www.distracted-driscoll.135-125-232-65.plesk.page/wp-json/wp/v2/pages/390').success (content) ->
+  $http.get('https://gestor.campviu.cat/wp-json/wp/v2/pages/390').success (content) ->
     # $scope.content = content.acf["ca"]
 
     #Carreguem la informació de cada block a les variables per ser utilitzades posteriorment.
