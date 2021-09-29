@@ -3,12 +3,12 @@ Darkswarm.controller "BRecursosController", ($scope, $http, $log) ->
   console.log 'JS Loaded'
 
   x = document.getElementById('lang').textContent
-  $http.get('https://www.distracted-driscoll.135-125-232-65.plesk.page/wp-json/wp/v2/pages/274').success (content) ->
+  $http.get('https://gestor.campviu.cat/wp-json/wp/v2/pages/274').success (content) ->
     $scope.content = content.acf["ca"]
     #Carreguem la informació de cada block a les variables per ser utilitzades posteriorment.
 
 
-  $http.get('https://www.distracted-driscoll.135-125-232-65.plesk.page/wp-json/wp/v2/pages/5').success (content2) ->
+  $http.get('https://gestor.campviu.cat/wp-json/wp/v2/pages/5').success (content2) ->
     $scope.content2 = content2.acf["ca"]
 
     array = Object.values($scope.content2.block)
