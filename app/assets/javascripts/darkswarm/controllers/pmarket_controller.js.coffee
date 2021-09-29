@@ -3,7 +3,7 @@ Darkswarm.controller "PMarketController", ($scope, $http, $log, $sce) ->
   console.log 'JS Loaded'
 
   x = document.getElementById('lang').textContent
-  $http.get('https://www.distracted-driscoll.135-125-232-65.plesk.page/wp-json/wp/v2/pages/44').success (content) ->
+  $http.get('https://gestor.campviu.cat/wp-json/wp/v2/pages/44').success (content) ->
     $scope.content = content.acf["ca"]
     #Carreguem la informació de cada block a les variables per ser utilitzades posteriorment.
 
