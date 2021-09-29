@@ -5,7 +5,7 @@ Darkswarm.controller "HomeCtrl", ($scope, $http, $sce) ->
     $scope.brandStoryExpanded = !$scope.brandStoryExpanded
 
   x = document.getElementById('lang').textContent
-  $http.get('https://www.distracted-driscoll.135-125-232-65.plesk.page/wp-json/wp/v2/pages/5').success (content) ->
+  $http.get('https://gestor.campviu.cat/wp-json/wp/v2/pages/5').success (content) ->
     $scope.content = content.acf["ca"]
     #Carreguem la informació de cada block a les variables per ser utilitzades posteriorment.
     array = Object.values($scope.content.block)
