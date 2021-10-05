@@ -9,7 +9,7 @@ Darkswarm.controller "BRecursosController", ($scope, $http, $log) ->
 
 
   $http.get('https://gestor.campviu.cat/wp-json/wp/v2/pages/5').success (content2) ->
-    $scope.content2 = content2.acf["ca"]
+    $scope.content2 = content2.acf[x]
 
     array = Object.values($scope.content2.block)
     $scope.home_block_3 = JSON.parse(JSON.stringify(array[2]))
