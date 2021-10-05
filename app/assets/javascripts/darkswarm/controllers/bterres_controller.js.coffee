@@ -5,6 +5,7 @@ Darkswarm.controller "BTerresController", ($scope, $http, $log) ->
   btnarray = []
   carray = []
   x = document.getElementById('lang').textContent
+  console.log 'Lang: ' + x
   $http.get('https://gestor.campviu.cat/wp-json/wp/v2/pages/213').success (content) ->
     $scope.content = content.acf[x]
     #Carreguem la informació de cada block a les variables per ser utilitzades posteriorment.
