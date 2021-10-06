@@ -1,4 +1,4 @@
-class BancTerresController < BaseController
+class FaqController < BaseController
   layout 'darkswarm'
 
   before_action :enable_embedded_shopfront
