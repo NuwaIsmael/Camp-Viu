@@ -2,7 +2,11 @@ Darkswarm.service "GmapsGeo", ->
   new class GmapsGeo
     OK: google?.maps?.GeocoderStatus?.OK
 
-	@@ -10,7 +10,7 @@ Darkswarm.service "GmapsGeo", ->
+    # Usage:
+    # Geo.geocode address, (results, status) ->
+    #   if status == Geo.OK
+    #     console.log results[0].geometry.location
+    #   else
     #     console.log "Error: #{status}"
     geocode: (address, callback) ->
       geocoder = new google.maps.Geocoder()
@@ -10,7 +14,9 @@ Darkswarm.service "GmapsGeo", ->
 
     distanceBetween: (src, dst) ->
       google.maps.geometry.spherical.computeDistanceBetween @toLatLng(src), @toLatLng(dst)
-	@@ -20,4 +20,4 @@ Darkswarm.service "GmapsGeo", ->
+
+    # Wrap an object in a google.maps.LatLng if it has not been already
+    toLatLng: (locatable) ->
       if locatable.lat?
         locatable
       else
