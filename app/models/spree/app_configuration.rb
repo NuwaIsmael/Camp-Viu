@@ -65,7 +65,7 @@ module Spree
     preference :show_products_without_price, :boolean, default: false
     preference :show_raw_product_description, :boolean, default: false
     preference :site_name, :string, default: 'Campviu'
-    preference :site_url, :string, default: 'campviu.cat'
+    preference :site_url, :string, default: 'www.campviu.cat'
     preference :tax_using_ship_address, :boolean, default: true
     # Determines whether to track on_hand values for variants / products.
     preference :track_inventory_levels, :boolean, default: true
@@ -94,14 +94,14 @@ module Spree
     preference :intercept_email, :string, default: nil
 
     # Default smtp settings
-    preference :mail_host, :string, default: 'smtp.nuwadigital.com'
-    preference :mail_domain, :string, default: 'nuwadigital.com'
-    preference :mail_port, :integer, default: 25
+    preference :mail_host, :string, default: 'smtp.office365.com'
+    preference :mail_domain, :string, default: 'baixcamp.cat'
+    preference :mail_port, :integer, default: 587
     preference :secure_connection_type, :string,
-               default: Core::MailSettings::SECURE_CONNECTION_TYPES[0]
+               default: 'TLS'
     preference :mail_auth_type, :string, default: 'login'
-    preference :smtp_username, :string, default: 'noreply@nuwadigital.com'
-    preference :smtp_password, :string, default: 'Peloto22'
+    preference :smtp_username, :string, default: 'no-reply@baixcamp.cat'
+    preference :smtp_password, :string, default: 'Consell2021'
 
     # Embedded Shopfronts
     preference :enable_embedded_shopfronts, :boolean, default: false
