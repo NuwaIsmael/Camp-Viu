@@ -1650,6 +1650,7 @@ es:
   hubs_filter_delivery: "Entrega"
   hubs_filter_property: "Propiedad"
   hubs_matches: "¿Quiso decir?"
+  hubs_headline: "Tiendas"
   hubs_intro: Compra en tu localidad
   hubs_distance: Más cercano a
   hubs_distance_filter: "Muéstrame tiendas cerca de %{location}"
