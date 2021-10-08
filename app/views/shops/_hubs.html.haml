@@ -3,7 +3,8 @@
     .small-12.columns.shops_header
      %h1
         = t :hubs_headline
-      %h2{"scroll-after-load" => (spree_current_user ? true : nil)}
+        
+     %h2{"scroll-after-load" => (spree_current_user ? true : nil)}
         = t :hubs_intro
 
   = render "shared/components/enterprise_search"
