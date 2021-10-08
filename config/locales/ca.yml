@@ -1734,7 +1734,8 @@ ca:
   producers_filter_type: Tipus
   producers_filter_property: Propietat
   producers_title: Productors
-  producers_headline: Troba productores locals
+  producers_headline: Mostrador del camp
+  producers_headline2: Troba productores locals
   producers_signup_title: Registra't com a productora
   producers_signup_headline: Productores d'aliments, empoderades.
   producers_signup_motivation: Ven el teu menjar i explica la teva història a diversos nous mercats. Estalvia temps i diners en totes les despeses generals. Done suport la innovació sense el risc. Hem aplanat el terreny de joc.
