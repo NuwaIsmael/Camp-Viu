@@ -1653,7 +1653,7 @@ ca:
   hubs_filter_property: "Propietat"
   hubs_matches: "Volies dir?"
   hubs_headline: "Botigues"
-  hubs_intro: 'Compreu a la vostra zona '
+  hubs_intro: 'Mostrador del camp'
   hubs_distance: El més proper a
   hubs_distance_filter: "Mostra'm botigues properes a%{location}"
   shop_changeable_orders_alert_html:
