@@ -62,7 +62,7 @@
         %pmarket_producers_description{"ng-bind-html" => "item.descripcio"}
         %div{"ng-show" => "item.video_url != ''"}
           .video-container
-            %iframe{allowfullscreen: "", frameborder: "0", height: "100%", "ng-src" => "item.video_url", width: "100%"}
+            %iframe{allowfullscreen: "", frameborder: "0", height: "100%", "ng-src" => "{{trustSrc(item.video_url)}}", width: "100%"}
 
   .pmarket_videos
     .row
