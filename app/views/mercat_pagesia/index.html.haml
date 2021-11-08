@@ -60,8 +60,8 @@
         %img{:src => "{{item.image}}"}
         %br/
         %pmarket_producers_description{"ng-bind-html" => "item.descripcio"}
-        - if item.video_url != ''
-          Works
+        - if item.video_url
+          Hola
 
   .pmarket_videos
     .row
