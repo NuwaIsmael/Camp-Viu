@@ -61,7 +61,7 @@
         %br/
         %pmarket_producers_description{"ng-bind-html" => "item.descripcio"}
         {{item.video_url}}
-        %div{"ng-hide" => "item.video_url == null"}
+        %div{"ng-hide" => "item.video_url != ''"}
           Not null
 
   .pmarket_videos
