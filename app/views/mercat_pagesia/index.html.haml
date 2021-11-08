@@ -60,6 +60,7 @@
         %img{:src => "{{item.image}}"}
         %br/
         %pmarket_producers_description{"ng-bind-html" => "item.descripcio"}
+        {{item.video_url}}
         %div{"ng-hide" => "item.video_url == null"}
           Not null
 
