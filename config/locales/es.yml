@@ -1651,7 +1651,7 @@ es:
   hubs_filter_property: "Propiedad"
   hubs_matches: "¿Quiso decir?"
   hubs_headline: "Mostrador del campo"
-  hubs_intro: Compra en tu localidad
+  hubs_intro: "Compra y encuentra grupos de consumo"
   hubs_distance: Más cercano a
   hubs_distance_filter: "Muéstrame tiendas cerca de %{location}"
   shop_changeable_orders_alert_html:
