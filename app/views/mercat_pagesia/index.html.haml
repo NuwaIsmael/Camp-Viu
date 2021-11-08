@@ -60,10 +60,9 @@
         %img{:src => "{{item.image}}"}
         %br/
         %pmarket_producers_description{"ng-bind-html" => "item.descripcio"}
-        {{item.video_url}}
         %div{"ng-show" => "item.video_url != ''"}
           .video-container
-            %iframe{allowfullscreen: "", frameborder: "0", height: "100%", "ng-src" => "{{item.video_url}}", width: "100%"}
+            %iframe{allowfullscreen: "", frameborder: "0", height: "100%", "ng-src" => "item.video_url", width: "100%"}
 
   .pmarket_videos
     .row
