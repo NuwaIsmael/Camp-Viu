@@ -49,7 +49,7 @@
       .small-12.medium-4.columns.pmarket_bonline_links.text-center
         %a{:href => "/producers"} {{shop_online_block_link2.text}}
       .small-12.medium-4.columns.pmarket_bonline_links.text-center
-        %a{:href => "/groups"} {{shop_online_block_link3.text}}
+        %a{:href => "/shops"} {{shop_online_block_link3.text}}
 
   .pmarket_producers
     .row
@@ -60,6 +60,7 @@
         %img{:src => "{{item.image}}"}
         %br/
         %pmarket_producers_description{"ng-bind-html" => "item.descripcio"}
+        {{item.video_url}}
 
   .pmarket_videos
     .row
