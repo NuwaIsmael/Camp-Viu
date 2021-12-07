@@ -226,7 +226,7 @@ ca:
   title: "Campviu"
   welcome_to: "Benvingut a "
   site_meta_description: "Comencem des de baix. Amb agricultors i productors disposats a explicar les seves històries amb orgull i sinceritat. Amb distribuïdors connectant persones i productes de manera justa i honesta. Amb compradors que creuen que millors decisions de compra setmanal poden ..."
-  search_by_name: Cercar per nom o barri ...
+  search_by_name: Cercar per nom o poble ...
   producers_join: Els productors son benvinguts a unir-se a Campviu.
   charges_sales_tax: Càrrecs d'IVA?
   print_invoice: "Imprimir Factura"
@@ -874,7 +874,7 @@ ca:
       change_type_form:
         producer_profile: Perfil de productora
         connect_ofn: Connecta mitjançant Campviu
-        always_free: SEMPRE GRATUÏT
+        always_free:
         producer_description_text: Afegeix els teus productes a Campviu i permet a grups de consum i altres organitzacions emmagatzemar els teus productes a les seves botigues.
         producer_shop: Botiga d'una productora
         sell_your_produce: Ven els teus propis productes
@@ -1365,8 +1365,8 @@ ca:
   use_geocoder: Voleu calcular la latitud i la longitud automàticament a partir de l'adreça?
   postcode: Codi postal
   postcode_placeholder: 'p. ex: 08870'
-  suburb: Barri
-  state: Estat
+  suburb: Poble
+  state: Provincia
   country: País
   unauthorized: No autoritzat
   terms_of_service: "Termes del servei"
@@ -1654,7 +1654,7 @@ ca:
   hubs_filter_property: "Propietat"
   hubs_matches: "Volies dir?"
   hubs_headline: "Mostrador del camp"
-  hubs_intro: 'Compra i troba grups de consum'
+  hubs_intro: 'Botigues'
   hubs_distance: El més proper a
   hubs_distance_filter: "Mostra'm botigues properes a%{location}"
   shop_changeable_orders_alert_html:
@@ -1737,7 +1737,7 @@ ca:
   producers_filter_property: Propietat
   producers_title: Productors
   producers_headline: Mostrador del camp
-  producers_headline2: Troba productores locals
+  producers_headline2: Troba productors/es locals
   producers_signup_title: Registra't com a productora
   producers_signup_headline: Productores d'aliments, empoderades.
   producers_signup_motivation: Ven el teu menjar i explica la teva història a diversos nous mercats. Estalvia temps i diners en totes les despeses generals. Done suport la innovació sense el risc. Hem aplanat el terreny de joc.
@@ -1910,9 +1910,9 @@ ca:
         address1_field_placeholder: "p. ex: Carrer Ample, 123 "
         address1_field_error: "Si us plau, introdueix una adreça"
         address2_field: "Adreça (línia 2):"
-        suburb_field: "Barri: "
+        suburb_field: "Poble: "
         suburb_field_placeholder: "p. ex: Les Corts "
-        suburb_field_error: "Si us plau, introdueix un barri "
+        suburb_field_error: "Si us plau, introdueix un Poble "
         postcode_field: "Codi postal:"
         postcode_field_placeholder: "p. ex: 08870"
         postcode_field_error: "El codi postal és obligatori"
@@ -2063,7 +2063,7 @@ ca:
   admin_enterprise_groups_contact: "Contacte"
   admin_enterprise_groups_contact_phone_placeholder: "p. ex.: 98 7654 3210"
   admin_enterprise_groups_contact_address1_placeholder: "p. ex: Carrer Ample, 23"
-  admin_enterprise_groups_contact_city: "Barri"
+  admin_enterprise_groups_contact_city: "Poble"
   admin_enterprise_groups_contact_city_placeholder: "p. ex: Sitges"
   admin_enterprise_groups_contact_zipcode: "Codi postal"
   admin_enterprise_groups_contact_zipcode_placeholder: "p. ex: 08870"
@@ -2230,7 +2230,7 @@ ca:
   report_header_first_name: Nom
   report_header_last_name: Cognoms
   report_header_phone: Telèfon
-  report_header_suburb: Barri
+  report_header_suburb: Poble
   report_header_address: Adreça
   report_header_billing_address: Adreça de facturació
   report_header_relationship: Relació
@@ -2286,7 +2286,7 @@ ca:
   report_header_taxons: Taxons
   report_header_supplier: Proveïdora
   report_header_producer: Productora
-  report_header_producer_suburb: barri de la productora
+  report_header_producer_suburb: poble de la productora
   report_header_unit: Unitat
   report_header_group_buy_unit_quantity: Quantitat de la unitat de compra del grup
   report_header_cost: Cost
@@ -2519,7 +2519,7 @@ ca:
         saving: DESANT
         enterprise_package:
           hub_profile: Perfil de grup
-          hub_profile_cost: "COST: SEMPRE GRATUÏT"
+          hub_profile_cost: ""
           hub_profile_text1: >
               La gent podrà trobar-vos i posar-se en contacte amb vosaltres a Open
               Food Network. La vostra organització serà visible al mapa i es podrà
@@ -2546,7 +2546,7 @@ ca:
               Fes clic a una opció per veure informació més detallada sobre cada perfil
               i prem el botó vermell "DESA" quan hagis acabat.
           profile_only: Només perfil
-          profile_only_cost: "COST: SEMPRE GRATUÏT"
+          profile_only_cost: ""
           profile_only_text1: >
               Un perfil et fa visible i contactablede cara als altres i és una forma
               de compartir la teva història.
@@ -2578,7 +2578,7 @@ ca:
               volem proporcionar les eines que necessites per executar la teva organització
               o empresa alimentària local.
           get_listing: Obtenir una llista
-          always_free: SEMPRE GRATUÏT
+          always_free:
           sell_produce_others: Ven productes d'altres
           sell_own_produce: Ven els teus propis productes
           sell_both: Ven productes d'un mateix i d'altres
@@ -3838,3 +3838,5 @@ ca:
   brandstory_hide: "Amagar text"
   pmarket_calendar: "Esdeveniments: els mercats físics"
   faq_title: "Preguntes freqüents"
+  grups_headline: "Mostrador del camp"
+  grups_intro: "Grups de consum"

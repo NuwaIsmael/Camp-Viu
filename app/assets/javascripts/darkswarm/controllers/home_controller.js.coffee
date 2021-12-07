@@ -5,6 +5,12 @@ Darkswarm.controller "HomeCtrl", ($scope, $http, $sce) ->
     $scope.brandStoryExpanded = !$scope.brandStoryExpanded
 
   x = document.getElementById('lang').textContent
+
+  _headers = new Headers('Content-Type': 'application/json')
+  _headers.append 'Authorization', '8Kv9TGtWm3t7cDYydCYyHH3B'
+  values = $http.get('https://comunitat.campviu.cat/api/stats?contracts=100', headers:_headers)
+
+  console.log values
   $http.get('https://gestor.campviu.cat/wp-json/wp/v2/pages/5').success (content) ->
     $scope.content = content.acf[x]
     #Carreguem la informació de cada block a les variables per ser utilitzades posteriorment.

@@ -1364,8 +1364,8 @@ es:
   use_geocoder: ¿Calcular la latitud y la longitud automáticamente desde la dirección?
   postcode: Código postal
   postcode_placeholder: ej. 08025
-  suburb: Barrio
-  state: Estado
+  suburb: Pueblo
+  state: Provincia
   country: País
   unauthorized: No autorizado
   terms_of_service: "Términos de servicio"
@@ -1652,7 +1652,7 @@ es:
   hubs_filter_property: "Propiedad"
   hubs_matches: "¿Quiso decir?"
   hubs_headline: "Mostrador del campo"
-  hubs_intro: "Compra y encuentra grupos de consumo"
+  hubs_intro: "Tiendas"
   hubs_distance: Más cercano a
   hubs_distance_filter: "Muéstrame tiendas cerca de %{location}"
   shop_changeable_orders_alert_html:
@@ -1735,7 +1735,7 @@ es:
   producers_filter_property: Propiedad
   producers_title: Productoras
   producers_headline: Mostrador de campo
-  producers_headline2: Encuentra productoras locales
+  producers_headline2: Encuentra productores/as locales
   producers_signup_title: Registrarse como productora
   producers_signup_headline: Productoras de alimentos, empoderadas.
   producers_signup_motivation: Venda sus alimentos y cuente sus historias en distintos nuevos mercados. Ahorre tiempo y dinero en costos administrativos. Apoyamos la innovación sin el riesgo. Hemos nivelado el campo de juego.
@@ -1908,9 +1908,9 @@ es:
         address1_field_placeholder: "p.ej. Passeig Sant Joan"
         address1_field_error: "Introduce una dirección"
         address2_field: "Dirección línea 2:"
-        suburb_field: "Barrio:"
+        suburb_field: "Pueblo:"
         suburb_field_placeholder: "e.g. Gràcia"
-        suburb_field_error: "Introduce un barrio"
+        suburb_field_error: "Introduce un Pueblo"
         postcode_field: "Código postal:"
         postcode_field_placeholder: "p.ej. 08025"
         postcode_field_error: "Requiere un código postal"
@@ -2061,7 +2061,7 @@ es:
   admin_enterprise_groups_contact: "Contacto"
   admin_enterprise_groups_contact_phone_placeholder: "ej. 98 7654 3210"
   admin_enterprise_groups_contact_address1_placeholder: "ej. Carrer Torrent de l'Olla"
-  admin_enterprise_groups_contact_city: "Barrio"
+  admin_enterprise_groups_contact_city: "Pueblo"
   admin_enterprise_groups_contact_city_placeholder: "ej. Barcelona"
   admin_enterprise_groups_contact_zipcode: "Código Postal"
   admin_enterprise_groups_contact_zipcode_placeholder: "ej. 08025"
@@ -2228,7 +2228,7 @@ es:
   report_header_first_name: Nombre
   report_header_last_name: Apellido
   report_header_phone: Teléfono
-  report_header_suburb: Barrio
+  report_header_suburb: Pueblo
   report_header_address: Dirección
   report_header_billing_address: Dirección de Facturación
   report_header_relationship: Relación
@@ -2284,7 +2284,7 @@ es:
   report_header_taxons: Clasificación
   report_header_supplier: Proveedor
   report_header_producer: Productora
-  report_header_producer_suburb: Barrio Productora
+  report_header_producer_suburb: Pueblo Productora
   report_header_unit: Unidad
   report_header_group_buy_unit_quantity: Agrupar por cantidad unidad
   report_header_cost: Coste
@@ -3837,3 +3837,5 @@ es:
   brandstory_hide: "Ocultar texto"
   pmarket_calendar: "Eventos: Los mercados físicos"
   faq_title: "Preguntas frecuentes"
+  grups_headline: "Mostrador del camp"
+  grups_intro: "Grups de consum"
