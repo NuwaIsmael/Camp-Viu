@@ -6,11 +6,12 @@ Darkswarm.controller "HomeCtrl", ($scope, $http, $sce) ->
 
   x = document.getElementById('lang').textContent
 
+  comptadors = undefined
   _headers = new Headers('Content-Type': 'application/json')
   _headers.append 'Authorization', '8Kv9TGtWm3t7cDYydCYyHH3B'
-  values = $http.get('https://comunitat.campviu.cat/api/stats?contracts=100', headers:_headers)
+  $http.get('https://comunitat.campviu.cat/api/stats?contracts=100', headers:_headers).success (result) ->
+    $scope.comptadors = result
 
-  console.log values
   $http.get('https://gestor.campviu.cat/wp-json/wp/v2/pages/5').success (content) ->
     $scope.content = content.acf[x]
     #Carreguem la informació de cada block a les variables per ser utilitzades posteriorment.

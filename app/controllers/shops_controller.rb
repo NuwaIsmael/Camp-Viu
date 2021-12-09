@@ -4,6 +4,6 @@ class ShopsController < BaseController
   before_action :enable_embedded_shopfront
 
   def index
-    @enterprises = ShopsListService.new.open_shops
+    @enterprises = Enterprise.where("NOT is_primary_producer = false AND sells = 'any'")
   end
 end

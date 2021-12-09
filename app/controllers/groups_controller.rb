@@ -1,9 +1,9 @@
 class GroupsController < BaseController
   layout 'darkswarm'
 
-  def show
-    enable_embedded_shopfront
-    @hide_menu = true if @shopfront_layout == 'embedded'
-    @group = EnterpriseGroup.find_by(permalink: params[:id]) || EnterpriseGroup.find(params[:id])
+  before_action :enable_embedded_shopfront
+
+  def index
+    @enterprises = Enterprise.where("is_primary_producer = false AND sells = 'any'")
   end
 end
