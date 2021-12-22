@@ -1366,7 +1366,7 @@ ca:
   postcode: Codi postal
   postcode_placeholder: 'p. ex: 08870'
   suburb: Poble
-  state: Provincia
+  state: Província
   country: País
   unauthorized: No autoritzat
   terms_of_service: "Termes del servei"
@@ -1916,8 +1916,8 @@ ca:
         postcode_field: "Codi postal:"
         postcode_field_placeholder: "p. ex: 08870"
         postcode_field_error: "El codi postal és obligatori"
-        state_field: "Estat:"
-        state_field_error: "Estat obligatori"
+        state_field: "Província:"
+        state_field_error: "Província obligatoria"
         country_field: "País:"
         country_field_error: "Si us plau, selecciona un país"
         map_location: "Ubicació del mapa"
@@ -2067,7 +2067,7 @@ ca:
   admin_enterprise_groups_contact_city_placeholder: "p. ex: Sitges"
   admin_enterprise_groups_contact_zipcode: "Codi postal"
   admin_enterprise_groups_contact_zipcode_placeholder: "p. ex: 08870"
-  admin_enterprise_groups_contact_state_id: "Estat"
+  admin_enterprise_groups_contact_state_id: "Província"
   admin_enterprise_groups_contact_country_id: "País"
   admin_enterprise_groups_web: "Recursos web"
   admin_enterprise_groups_web_twitter: "p. ex: @horta_josepribes"
@@ -3048,7 +3048,7 @@ ca:
     city: "Municipi"
     zip: "Codi postal"
     country: "País"
-    state: "Estat"
+    state: "Província"
     phone: "Telèfon"
     update: "Actualitzar"
     use_billing_address: "Utilitzeu l'adreça de facturació"
@@ -3115,11 +3115,11 @@ ca:
     default_tax: "Impost predeterminat"
     default_tax_zone: "Zona d'impostos predeterminada"
     country_based: "Basat en el país"
-    state_based: "Basat en l'Estat"
+    state_based: "Basat en la província"
     countries: "Països"
     listing_countries: "Llistat de països"
     iso_name: "Nom ISO"
-    states_required: "Estats obligatoris"
+    states_required: "Províncies obligatoris"
     editing_country: "Editar el país"
     back_to_countries_list: "Torna a la llista de països"
     states: "Estats"

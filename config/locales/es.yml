@@ -363,7 +363,7 @@ es:
     shipping_method: Método de envío
     shop: Tienda
     sku: número de referencia
-    status_state: Provincia
+    status_state: Estado
     tags: Etiquetas
     variant: Variedad
     weight: Peso
@@ -2193,7 +2193,7 @@ es:
   admin_share_city: "Ciudad"
   admin_share_zipcode: "Código Postal"
   admin_share_country: "País"
-  admin_share_state: "Estado"
+  admin_share_state: "Provincia"
   hub_sidebar_hubs: "Hubs"
   hub_sidebar_none_available: "Ninguno Disponible"
   hub_sidebar_manage: "Gestionar"
@@ -3114,16 +3114,16 @@ es:
     default_tax: "Impuesto por Defecto"
     default_tax_zone: "Zona de impuestos predeterminada"
     country_based: "Basado en el país"
-    state_based: "Basado en el estado"
+    state_based: "Basado en la provincia"
     countries: "Países"
     listing_countries: "Listado de países"
     iso_name: "Nombre ISO"
-    states_required: "Estados requeridos"
+    states_required: "Provincias requeridas"
     editing_country: "Editar país"
     back_to_countries_list: "Volver a la lista de países"
-    states: "Estados"
+    states: "Provincias"
     abbreviation: "Abreviatura"
-    new_state: "Nuevo estado"
+    new_state: "Nueva provincia"
     payment_methods: "Métodos de Pago"
     taxonomies: "Taxonomias"
     new_taxonomy: "Nueva taxonomía"

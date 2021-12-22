@@ -15,9 +15,9 @@
     .container
       %figure.columns.three{"data-hook" => "logo-wrapper"}
         = link_to image_tag(Spree::Config[:admin_interface_logo], :id => 'logo'), spree.admin_dashboard_path
-      %nav{:style => "padding: 15px 0 5px 10px;"}
-        Mostrador del Camp
-      %nav.columns.eleven{"data-hook" => "admin_login_navigation_bar"}
+      %nav.columns.four{:style => "padding: 10px 0 5px 10px; font-size: 20px; font-weight: bold;"}
+        MOSTRADOR DEL CAMP
+      %nav.columns.seven{"data-hook" => "admin_login_navigation_bar"}
         = render :partial => 'spree/layouts/admin/login_nav'
 
   %nav#admin-menu{ data: { hook: '' }}

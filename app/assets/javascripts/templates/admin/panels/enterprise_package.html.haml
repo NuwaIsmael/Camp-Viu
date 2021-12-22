@@ -101,8 +101,6 @@
             {{ 'js.admin.panels.enterprise_package.profile_only' | t }}
           %p
             {{ 'js.admin.panels.enterprise_package.get_listing' | t }}
-        .bottom
-          {{ 'js.admin.panels.enterprise_package.always_free' | t }}
       %a.button.selector.hub{ ng: { click: "enterprise.owned && (enterprise.sells='any')", class: "{selected: enterprise.sells=='any', disabled: !enterprise.owned}" } }
         .top
           %h3
@@ -117,8 +115,6 @@
             {{ 'js.admin.panels.enterprise_package.profile_only' | t }}
           %p
             {{ 'js.admin.panels.enterprise_package.get_listing' | t }}
-        .bottom
-          {{ 'js.admin.panels.enterprise_package.always_free' | t }}
       %a.button.selector.producer-shop{ ng: { click: "enterprise.owned && (enterprise.sells='own')", class: "{selected: enterprise.sells=='own', disabled: !enterprise.owned}" } }
         .top
           %h3
