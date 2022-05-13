@@ -74,7 +74,7 @@ module Openfoodnetwork
     #       of Spree
     initializer 'ofn.spree_locale_settings', before: 'spree.promo.environment' do |app|
       Spree::Config['checkout_zone'] = ENV['CHECKOUT_ZONE']
-      Spree::Config['currency'] = ENV['CURRENCY']
+      Spree::Config['currency'] = 'EUR'
 
       if ActiveRecord::Base.connected? && Spree::Country.table_exists?
         country = Spree::Country.find_by(iso: ENV['DEFAULT_COUNTRY_CODE'])
