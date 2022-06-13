@@ -60,7 +60,7 @@ feature "Cookies", js: true do
 
     context "disabled in the settings" do
       scenario "it is not showing" do
-        Spree::Config[:cookies_consent_banner_toggle] = false
+        Spree::Config[:cookies_consent_banner_toggle] = true
         visit root_path
         expect(page).to have_no_content I18n.t('legal.cookies_banner.cookies_usage')
       end
