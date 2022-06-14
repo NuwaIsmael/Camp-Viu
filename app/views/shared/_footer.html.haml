@@ -73,3 +73,10 @@
     %a{href: "/legal"} Avis legal
     -# %a{href: main_app.root_path} Política de privacitat
     -# %a{href: main_app.root_path} Política de cookies
+    %p.text-small
+      Testing
+    %p.text-small
+      - if Spree::Config.privacy_policy_url.present?
+        = t('.footer_data_text_with_privacy_policy_html', cookies_policy: cookies_policy_link.html_safe, privacy_policy: privacy_policy_link.html_safe)
+      - else
+        = t('.footer_data_text_without_privacy_policy_html', cookies_policy: cookies_policy_link.html_safe)
