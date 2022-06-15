@@ -59,7 +59,7 @@ module OrderManagement
 
         context "the currency is different than the order's currency" do
           it "does not return shipping rates from a shipping method" do
-            order.currency = "USD"
+            order.currency = "EUR"
             shipping_rates = subject.shipping_rates(package)
             expect(shipping_rates).to eq []
           end

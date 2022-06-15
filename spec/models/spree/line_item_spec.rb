@@ -58,7 +58,7 @@ module Spree
 
     describe '.currency' do
       it 'returns the globally configured currency' do
-        line_item.currency == 'USD'
+        line_item.currency == 'EUR'
       end
     end
 
