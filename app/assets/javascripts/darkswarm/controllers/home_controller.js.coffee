@@ -9,7 +9,7 @@ Darkswarm.controller "HomeCtrl", ($scope, $http, $sce) ->
   comptadors = undefined
   _headers = new Headers('Content-Type': 'application/json')
   _headers.append 'Authorization', '8Kv9TGtWm3t7cDYydCYyHH3B'
-  $http.get('https://comunitat.campviu.cat/api/stats', headers:_headers).success (result) ->
+  $http.get('https://comunitat.campviu.cat/api/stats?contracts=100', headers:_headers).success (result) ->
     $scope.comptadors = result
 
   $http.get('https://gestor.campviu.cat/wp-json/wp/v2/pages/5').success (content) ->
